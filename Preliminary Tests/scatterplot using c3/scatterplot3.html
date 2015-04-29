@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<style>
+		body {
+		  font: 11px sans-serif;
+		}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+
+		.dot {
+		  stroke: #000;
+		}
+
+		.indent{
+			margin-left: 40px;
+		}
+
+		.tooltip {
+		  position: absolute;
+		  width: 200px;
+		  height: 28px;
+		  pointer-events: none;
+		}
+	</style>
+	
+	<!-- Load c3.css -->
+	<link href="C3/c3.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Load d3.js and c3.js -->
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="C3/c3.min.js"></script>
+</head>
+
+<body>
+	<!-- Drop down selection for the axes -->
+	<select id="Y-Axis" onchange="AxisChange()" class="indent">
+	  <option disabled>Y-Axis</option>
+	  <option value="Pre Geo Sum" selected>Pre Geo Sum</option>
+	  <option value="Post Geo Sum">Post Geo Sum</option>
+	  <option value="SIC Sum">SIC Sum</option>
+	  <option value="II Geo Sum">II Geo Sum</option>
+	  <option value="II GC Sum">II GC Sum</option>
+	  <option value="BIS Sum">BIS Sum</option>
+	</select>
+	
+	<select id="X-Axis" onchange="AxisChange()">
+	  <option disabled>X-Axis</option>
+	  <option value="Pre Geo Sum" selected>Pre Geo Sum</option>
+	  <option value="Post Geo Sum">Post Geo Sum</option>
+	  <option value="SIC Sum">SIC Sum</option>
+	  <option value="II Geo Sum">II Geo Sum</option>
+	  <option value="II GC Sum">II GC Sum</option>
+	  <option value="BIS Sum">BIS Sum</option>
+	</select>
+	<!-- Script for updating data based on axis selection -->
+	<script>
+	function AxisChange() {
+			
+		if (document.getElementById("Y-Axis").value == "Pre Geo Sum" && document.getElementById("X-Axis").value == "Pre Geo Sum"){
+			chart.unload();
+			chart.load({url: 'studentDataPreGeoPreGeo.csv'});			
+		}    
+		if (document.getElementById("Y-Axis").value == "Pre Geo Sum" && document.getElementById("X-Axis").value == "Post Geo Sum"){
+			chart.unload();
+			chart.load({xs: {
+				AlignedBadges: 'alligned_pregeosum',
+				NoBadges: 'no_pregeosum',
+				RandomBadges: 'random_pregeosum',
+			},url: 'studentDataPreGeoPostGeo.csv'});			
+		}  		
+		else{
+			chart.unload();	
+		}        
+	}
+	</script>
+	
+	<!-- The Chart -->
+	<div id="chart"></div>
+	
+	<!-- Script that makes the chart -->
+	<script>
+		var chart = c3.generate({
+		data: {
+			xs: {
+				AlignedBadges: 'alligned_pregeosum',
+				NoBadges: 'no_pregeosum',
+				RandomBadges: 'random_pregeosum',
+			},
+			url: 'studentDataPreGeoPreGeo.csv',
+			type: 'scatter',
+			selection: {
+				enabled: true,
+				multiple: true,
+				draggable: true,
+			}
+		},
+		axis: {
+			x: {
+				label: 'Post Geo Sum',
+				tick: {
+					fit: false
+				}
+			},
+			y: {
+				label: 'Pre Geo Sum'
+			}
+		},
+		legend:{
+			position: 'right'
+		}
+	});
+	</script>
+</body>
+</html>

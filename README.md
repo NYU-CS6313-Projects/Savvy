@@ -1,8 +1,5 @@
-# Project X
+# Project Savvy
 
-TODO describe project here
+Savvy is a tool for assessing educational games’ learning impact
 
-A live demo can be found [here](http://NYU-CS6313-Projects.github.io/sp2015-group24/).
-
-You can use the `deploy.sh` script to keep the `gh-pages` branch up-to-date.
-When forking this project be sure to update the link to the demo page in this file.
+A live demo can be found [here](http://mseijas.github.io/Savvy/).
