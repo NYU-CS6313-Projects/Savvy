@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/c3.min.css">
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="js/c3.js"></script>
+
+	
+	
+	<title>Savvy</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="left-wrapper">
+		<div class="scatterplot-container">
+			<div class="scatterplot-settings">
+				<div class=""><b>X: </b>
+					<select name="scatterplot-xaxis">
+					  <option value="PreGeoSum" selected>Pre Knowledge Score</option> 
+					  <option value="PostGeoSum">Post Knowledge Score</option>
+					  <option value="SIC_SUM">Situational Interest</option>
+					  <option value="IIGeo_SUM">Interest in Geometry</option>
+					  <option value="IIGC_SUM">Interest in Games</option>
+					  <option value="BIS_SUM">Interest in Badges</option>
+					</select>
+				</div>
+				<div class=""><b>Y: </b>
+					<select name="scatterplot-yaxis">
+					  <option value="PreGeoSum">Pre Knowledge Score</option> 
+					  <option value="PostGeoSum" selected>Post Knowledge Score</option>
+					  <option value="SIC_SUM">Situational Interest</option>
+					  <option value="IIGeo_SUM">Interest in Geometry</option>
+					  <option value="IIGC_SUM">Interest in Games</option>
+					  <option value="BIS_SUM">Interest in Badges</option>
+					</select>
+				</div>
+			</div>
+			<div class="scatterplot-chart">Loading...</div>
+		</div>
+		<div class="playerselection-container">
+			<div class="studentselection-chart"></div>
+		</div>
+	</div>
+	<div class="right-wrapper">
+		<div class="metrics-container">
+			<div class="metric-playtime">Avg. Play Time (s)</div>
+			<div class="metric-deaths"># Deaths</div>
+			<div class="metric-repeats"># Repeats</div>
+			<div class="metric-anglesunlocked" ># Angles Unlocked</div>
+			<div class="metric-badgesearned"># Badges Earned</div>
+			<div class="metric-badgeoptinout">Bade Opt-in/out</div>
+		</div>
+		<div class="chapter-container">
+			<div class="chapter1-chart">Loading...</div>
+			<div class="chapter2-chart">Loading...</div>
+			<div class="chapter3-chart">Loading...</div>
+			<div class="chapter4-chart">Loading...</div>
+		</div>
+		<div class="totalset-container">
+			<div class="totalset-chapter1-chart">Loading...</div>
+			<div class="totalset-chapter2-chart">Loading...</div>
+			<div class="totalset-chapter3-chart">Loading...</div>
+			<div class="totalset-chapter4-chart">Loading...</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script src="js/studentselection_chart.js"></script>
+<script src="js/scatterplot_chart.js"></script>
+<script src="js/chapter_charts.js"></script>
+<script src="js/totalset_charts.js"></script>
+</html>
+
+
+<style>
+div {
+	box-sizing: border-box;
+	font-size: 12px;
+}
+.wrapper {
+	margin-top: 4px;
+	margin-left: 6px;
+	width: 100vw;
+	height: 97vh;
+}
+
+.left-wrapper {
+	border: solid 1px #000;
+	width: 30vw;
+	float: left;
+	height: 97vh;
+}
+
+.right-wrapper {
+	border: solid 1px #000;
+	width: 68vw;
+	float: left;
+	height: 97vh;
+}
+
+.metrics-container {
+	border: solid 1px #000;
+	height: 31vh;
+	font-size: 12px;
+}
+
+.metrics-container div {
+	margin: 0 auto;
+	width: 16%;
+	height: 100%;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 15px;
+	padding-top: 30px;
+}
+
+.scatterplot-settings {
+	width: 100%;
+	height: 30px;
+	background-color: rgb(229, 229, 229);
+}
+
+.scatterplot-settings div {
+	float: left;
+	position: relative;
+ 	top: 50%;
+  	transform: translateY(-50%);
+  	font-size: 12px;
+  	padding-left: 18px;
+  	padding-right: 15px;
+}
+
+.scatterplot-chart {
+	width: 90%;
+	height: 85%;
+}
+
+.studentselection-chart {
+	width: 100%;
+	height: 100%;
+	padding: 15px
+}
+
+.chapter-container,  .totalset-container{
+	border: solid 1px #000;
+	height: 33vh;
+
+}
+
+.chapter-container div, .totalset-container div{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+	width: 23%; 
+	height: 100%;
+	display: inline-block
+}
+
+.scatterplot-container {
+	border: solid 1px #000;
+	height: 64vh;
+}
+
+.scatterplot-chart {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+}
+
+.playerselection-container {
+	border: solid 1px #000;
+	height: 33vh;
+}
+
+</style>
+
