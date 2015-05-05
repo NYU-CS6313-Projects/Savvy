@@ -6,9 +6,6 @@
 	<link rel="stylesheet" href="css/c3.min.css">
 	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<script src="js/c3.js"></script>
-
-	
-	
 	<title>Savvy</title>
 </head>
 <body>
@@ -53,7 +50,15 @@
 			<div class="metric-badgesearned"># Badges Earned</div>
 			<div class="metric-badgeoptinout">Bade Opt-in/out</div>
 		</div>
+		<select name="chapter-metric" id="chapter-metric-select" onchange="updateChapterAttributes()">
+			  <option value="playTime">Play Time (s)</option> 
+			  <option value="deaths"># Deaths</option>
+			  <option value="anglesUnlocked"># Angles Unlocked</option>
+				  <option value="badgesEarned"># Badges Earned</option>	
+			  <option value="playCount"># Level Repeats</option>
+			</select>
 		<div class="chapter-container">
+			
 			<div class="chapter1-chart">Loading...</div>
 			<div class="chapter2-chart">Loading...</div>
 			<div class="chapter3-chart">Loading...</div>
