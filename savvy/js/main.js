@@ -12,8 +12,14 @@ LevelKeys[4] = 6;
 function initViz()
 {
   updateGameKeyMetrics();
+  updateAllCharts();
 }
 
+function updateAllCharts()
+{
+  updateGroupSummaryCharts();
+  updateGameSummaryCharts();
+}
 
 /****** DATA LOADING ******/
 

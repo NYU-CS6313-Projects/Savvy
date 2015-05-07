@@ -75,7 +75,7 @@
 				<div class="metric-chart" id="chart-badgesearned"></div>
 			</div>
 		</div>
-		<select name="chapter-metric" id="chapter-metric-select" onchange="updateGameSummaryCharts()">
+		<select name="chapter-metric" id="chapter-metric-select" onchange="updateAllCharts()">
 			  <option value="playTime">Play Time (s)</option> 
 			  <option value="playCount"># Level Repeats</option> 
 			  <option value="steps"># Steps</option> 
@@ -104,10 +104,10 @@
 
 
 <script src="js/main.js"></script>
+<!-- <script src="js/scatterplot_chart.js"></script> -->
 <script src="js/studentselection_chart.js"></script>
 <script src="js/game_keymetrics.js"></script>
-<!-- <script src="js/scatterplot_chart.js"></script> -->
-<script src="js/chapter_charts.js"></script>
+<script src="js/group_summarycharts.js"></script>
 <script src="js/game_summarycharts.js"></script>
 </html>
 

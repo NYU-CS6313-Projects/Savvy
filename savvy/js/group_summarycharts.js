@@ -6,16 +6,18 @@
 // summaryData = [ { 'Chapter': NN, 'Level': NN, '_attributeName': NN } ]
 
 
-function updateGameSummaryCharts()
+function updateGroupSummaryCharts()
 {
+  var group = getStudentsWithID([3001, 3002, 3003, 3004, 3005, 3013, 3014, 3016, 3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108]);
+
   var selectedAttribute = getSelectedAttribute();
   var max = getAttributeSummary(selectedAttribute.key).max;
 
   for (ch = 1; ch < 5; ch++) {
-    var data = getAttributeSummaryForChapter(selectedAttribute.key, ch);
+    var data = getAttributeSummaryForChapter(selectedAttribute.key, ch, group);
 
     var chart = c3.generate({
-          bindto: '.totalset-chapter'+ch+'-chart',
+          bindto: '.chapter'+ch+'-chart',
           data: {
             json: data,
             type: 'bar',
