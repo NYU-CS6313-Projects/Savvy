@@ -1,5 +1,19 @@
 var gameLog = loadJSON('data/gameLog.json');
 
+var LevelKeys = {};
+LevelKeys[1] = 9;
+LevelKeys[2] = 7;
+LevelKeys[3] = 8;
+LevelKeys[4] = 6;
+
+
+
+
+function initViz()
+{
+  updateGameKeyMetrics();
+}
+
 
 /****** DATA LOADING ******/
 
@@ -172,7 +186,7 @@ function getLevel(levelNumber, data)
   {
     for (student in gameLog)
     {
-      if (gameLog[student].level == chapterNumber)
+      if (gameLog[student].level == levelNumber)
       {
         studentData.push(gameLog[student]);
       }
@@ -206,6 +220,96 @@ function getAttribute(attributeName, data)
 }
 
 
+function getAttributeSummary(attributeName, data)
+{
 
+  var summaryData = [];
+  var attributeSUM = [];
+
+  for (ch = 1; ch < 5; ch++)
+  {
+
+    var chapterData = getChapter(ch, data);
+
+    for (lv = 1; lv < LevelKeys[ch] + 1; lv++)
+    {
+      
+      var row = {};
+      row['Chapter'] = ch;
+      row['Level'] = lv;
+
+      var levelData = getLevel(lv, chapterData);
+
+      if ((chapterData && chapterData.length > 0) && (levelData && levelData.length > 0)) {
+
+        var attribute = getAttribute(attributeName, levelData);
+
+        row[attributeName] = attribute.sum;
+        attributeSUM.push(attribute.sum);
+
+      }
+      else
+      {
+        row[attributeName] = 0;
+      }
+      
+
+      summaryData.push(row);
+      
+    }
+  }
+
+  return { 'data' : summaryData, 'max' : arrayMax(attributeSUM)};
+
+}
+
+
+function getAttributeSummaryForChapter(attributeName, ch, data)
+{
+
+  var summaryData = [];
+
+  var chapterData = getChapter(ch, data);
+
+  for (lv = 1; lv < LevelKeys[ch] + 1; lv++)
+  {
+    
+    var row = {};
+    row['Chapter'] = ch;
+    row['Level'] = lv;
+
+    var levelData = getLevel(lv, chapterData);
+
+    if ((chapterData && chapterData.length > 0) && (levelData && levelData.length > 0)) {
+
+      var attribute = getAttribute(attributeName, levelData);
+
+      row[attributeName] = attribute.sum;
+
+    }
+    else
+    {
+      row[attributeName] = 0;
+    }
+    
+
+    summaryData.push(row);
+    
+  }
+
+  return summaryData;
+
+}
+
+
+function getSelectedAttribute()
+{
+  var chapterAttributeSelected = document.getElementById("chapter-metric-select");
+
+  chapterAttributeKey = chapterAttributeSelected.options[chapterAttributeSelected.selectedIndex].value;
+  chapterAttributeName = chapterAttributeSelected.options[chapterAttributeSelected.selectedIndex].innerHTML;
+
+  return {'key' : chapterAttributeKey, 'name' : chapterAttributeName}
+}
 
 

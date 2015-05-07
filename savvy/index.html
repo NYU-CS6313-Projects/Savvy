@@ -9,7 +9,7 @@
 	<script src="js/c3.js"></script>
 	<title>Savvy</title>
 </head>
-<body onload="updateGameKeyMetrics()">
+<body onload="initViz()">
 
 <div class="wrapper">
 	<div class="left-wrapper">
@@ -47,34 +47,41 @@
 			<div>
 				<p>Total Play Time (s)</p>
 				<p class="metric-value" id="metric-playtime">...</p>
+				<div class="metric-chart" id="chart-playtime"></div>
 			</div>
 			<div>
 				<p># Level Repeats</p>
 				<p class="metric-value" id="metric-repeats">...</p>
+				<div class="metric-chart" id="chart-repeats"></div>
 			</div>
 			<div>
 				<p># Steps</p>
 				<p class="metric-value" id="metric-steps">...</p>
+				<div class="metric-chart" id="chart-steps"></div>
 			</div>
 			<div>
 				<p># Deaths</p>
 				<p class="metric-value" id="metric-deaths">...</p>
+				<div class="metric-chart" id="chart-deaths"></div>
 			</div>
 			<div>
 				<p># Angles Unlocked</p>
 				<p class="metric-value" id="metric-anglesunlocked">...</p>
+				<div class="metric-chart" id="chart-anglesunlocked"></div>
 			</div>
 			<div>
 				<p># Badges Earned</p>
 				<p class="metric-value" id="metric-badgesearned">...</p>
+				<div class="metric-chart" id="chart-badgesearned"></div>
 			</div>
 		</div>
-		<select name="chapter-metric" id="chapter-metric-select" onchange="updateChapterAttributes()">
+		<select name="chapter-metric" id="chapter-metric-select" onchange="updateGameSummaryCharts()">
 			  <option value="playTime">Play Time (s)</option> 
+			  <option value="playCount"># Level Repeats</option> 
+			  <option value="steps"># Steps</option> 
 			  <option value="deaths"># Deaths</option>
 			  <option value="anglesUnlocked"># Angles Unlocked</option>
-				  <option value="badgesEarned"># Badges Earned</option>	
-			  <option value="playCount"># Level Repeats</option>
+			  <option value="badgesEarned"># Badges Earned</option>	
 			</select>
 		<div class="chapter-container">
 			
@@ -101,7 +108,7 @@
 <script src="js/game_keymetrics.js"></script>
 <!-- <script src="js/scatterplot_chart.js"></script> -->
 <script src="js/chapter_charts.js"></script>
-<script src="js/totalset_charts.js"></script>
+<script src="js/game_summarycharts.js"></script>
 </html>
 
 
@@ -150,6 +157,10 @@ div {
 	padding-left: 30px;
 	padding-right: 15px;
 	padding-top: 30px;
+}
+
+.metric-chart {
+	height: 47% !important;
 }
 
 .scatterplot-settings {
