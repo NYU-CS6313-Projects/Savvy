@@ -32,7 +32,11 @@ function updateGameKeyCharts(data)
 	          data: {
 		        columns: data.values,
 			    type: 'bar',
-			    labels: true
+			    labels: true,
+			    colors: {
+			    	'No badges': '#d95f02',
+				    'Badges': '#1b9e77',
+				  },
 			  },
 			  axis: {
 			  	rotated: true,
