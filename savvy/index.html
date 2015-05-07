@@ -46,27 +46,27 @@
 		<div class="metrics-container">
 			<div>
 				<p>Total Play Time (s)</p>
-				<p id="metric-playtime">...</p>
+				<p class="metric-value" id="metric-playtime">...</p>
 			</div>
 			<div>
 				<p># Level Repeats</p>
-				<p id="metric-repeats">...</p>
+				<p class="metric-value" id="metric-repeats">...</p>
 			</div>
 			<div>
 				<p># Steps</p>
-				<p id="metric-steps">...</p>
+				<p class="metric-value" id="metric-steps">...</p>
 			</div>
 			<div>
 				<p># Deaths</p>
-				<p id="metric-deaths">...</p>
+				<p class="metric-value" id="metric-deaths">...</p>
 			</div>
 			<div>
 				<p># Angles Unlocked</p>
-				<p id="metric-anglesunlocked">...</p>
+				<p class="metric-value" id="metric-anglesunlocked">...</p>
 			</div>
 			<div>
 				<p># Badges Earned</p>
-				<p id="metric-badgesearned">...</p>
+				<p class="metric-value" id="metric-badgesearned">...</p>
 			</div>
 		</div>
 		<select name="chapter-metric" id="chapter-metric-select" onchange="updateChapterAttributes()">
@@ -135,6 +135,11 @@ div {
 	border: solid 1px #000;
 	height: 31vh;
 	font-size: 12px;
+}
+
+.metric-value {
+	text-align: right;
+	font-size: 20px;
 }
 
 .metrics-container div {
