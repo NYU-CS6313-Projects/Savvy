@@ -2,7 +2,7 @@ function updateChapterGraphs(chapterAttributeKey, chapterAttributeName)
 {
 
   // for (var i = 1; i < 5; i++){
-    i = 1;
+    
     // data = 
     //   [{"subjectId":3001,"subjectCond":"level badges","chapter":1,"level":1,"playCount":1,"playTime":8,"deaths":0,"badgesEarned":"0","anglesUnlocked":0,"steps":1,"badgeDecision":"NULL"},
     //    {"subjectId":3001,"subjectCond":"level badges","chapter":1,"level":1,"playCount":1,"playTime":9,"deaths":0,"badgesEarned":"0","anglesUnlocked":0,"steps":2,"badgeDecision":"NULL"},{"subjectId":3001,"subjectCond":"level badges","chapter":1,"level":3,"playCount":1,"playTime":13,"deaths":0,"badgesEarned":"0","anglesUnlocked":0,"steps":5,"badgeDecision":"NULL"},{"subjectId":3001,"subjectCond":"level badges","chapter":1,"level":4,"playCount":1,"playTime":14,"deaths":0,"badgesEarned":"0","anglesUnlocked":1,"steps":3,"badgeDecision":"NULL"}];
@@ -68,4 +68,6 @@ function updateChapterAttributes(){
   updateChapterGraphs(chapterAttributeKey, chapterAttributeName);
 
 };
+
+
 

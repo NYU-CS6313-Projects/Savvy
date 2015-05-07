@@ -17,3 +17,8 @@ function updateGameKeyMetrics(data)
 	badgesEarned.innerHTML = getAttribute('badgesEarned', data).sum;
 
 }
+
+function updateGameKeyCharts(data)
+{
+	
+}
