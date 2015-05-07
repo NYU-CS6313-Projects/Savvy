@@ -1,11 +1,3 @@
-// Chapter 1 - Level: 1 - 9
-// Chapter 2 - Level: 1 - 7
-// Chapter 3 - Level: 1 - 8
-// Chapter 4 - Level: 1 - 6
-
-// summaryData = [ { 'Chapter': NN, 'Level': NN, '_attributeName': NN } ]
-
-
 function updateGroupSummaryCharts()
 {
   var group = getStudentsWithID([3001, 3002, 3003, 3004, 3005, 3013, 3014, 3016, 3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108]);

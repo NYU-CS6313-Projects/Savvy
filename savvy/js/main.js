@@ -265,7 +265,7 @@ function getAttributeSummary(attributeName, data)
     }
   }
 
-  return { 'data' : summaryData, 'max' : arrayMax(attributeSUM)};
+  return { 'data' : summaryData, 'max' : arrayMax(attributeSUM) };
 
 }
 
