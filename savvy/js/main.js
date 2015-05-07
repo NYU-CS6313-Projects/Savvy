@@ -12,6 +12,7 @@ LevelKeys[4] = 6;
 function initViz()
 {
   updateGameKeyMetrics();
+  updateGameKeyCharts();
   updateAllCharts();
 }
 
@@ -109,38 +110,6 @@ function getStudentsWithID(studentIDs)
       {
           studentData.push(gameLog[student]);
       }
-  }
-
-  return studentData;
-}
-
-// * Conditions (subjectCond):
-//   - "level badges"
-//   - "no badges"
-
-function getCondition(condition, data)
-{
-  studentData = [];
-
-  if (data && data.length > 0)
-  {
-    for (student in data)
-    {
-      if (data[student].subjectCond == condition)
-      {
-        studentData.push(data[student]);
-      }
-    }
-  }
-  else
-  {
-    for (student in gameLog)
-    {
-      if (gameLog[student].subjectCond == condition)
-      {
-        studentData.push(gameLog[student]);
-      }
-    }
   }
 
   return studentData;
@@ -306,6 +275,76 @@ function getAttributeSummaryForChapter(attributeName, ch, data)
   return summaryData;
 
 }
+
+
+// * Conditions (subjectCond):
+//   - "level badges"
+//   - "no badges"
+
+function getCondition(condition, data)
+{
+  studentData = [];
+
+  if (data && data.length > 0)
+  {
+    for (student in data)
+    {
+      if (data[student].subjectCond == condition)
+      {
+        studentData.push(data[student]);
+      }
+    }
+  }
+  else
+  {
+    for (student in gameLog)
+    {
+      if (gameLog[student].subjectCond == condition)
+      {
+        studentData.push(gameLog[student]);
+      }
+    }
+  }
+
+  return studentData;
+}
+
+
+
+function getConditionSummary(attributeName, data)
+{
+  var badges;
+  var noBadges;
+
+  if (data && data.length > 0)
+  {
+    badges = getCondition('level badges', data);
+    noBadges = getCondition('no badges', data);
+  }
+  else
+  {
+    badges = getCondition('level badges');
+    noBadges = getCondition('no badges');
+  }
+
+  var attribute_Badges = getAttribute(attributeName, badges);
+  var attribute_NoBadges = getAttribute(attributeName, noBadges);
+
+  var max = Math.max(attribute_Badges.sum, attribute_NoBadges.sum);
+
+  // data: {
+  //       columns: [
+  //           ['data1', 30, 200, 100, 400, 150, 250],
+  //           ['data2', 130, 100, 140, 200, 150, 50]
+  //       ],
+  //       type: 'line'
+  //   }
+
+  // return { 'badges' : attribute_Badges.sum, 'noBadges' : attribute_NoBadges.sum, 'max' : max };
+  return { 'values' : [['Badges', attribute_Badges.sum], ['No badges', attribute_NoBadges.sum]], 'max' : max };
+}
+
+
 
 function updateSelectedAttribute(attribute)
 {

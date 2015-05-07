@@ -20,5 +20,40 @@ function updateGameKeyMetrics(data)
 
 function updateGameKeyCharts(data)
 {
-	
+	var metricKeys = ['playTime', 'playCount', 'steps', 'deaths', 'anglesUnlocked', 'badgesEarned'];
+
+	for (metric in metricKeys)
+	{
+
+		var data = getConditionSummary(metricKeys[metric], data);
+
+		var chart = c3.generate({
+	          bindto: '#chart-'+metricKeys[metric],
+	          data: {
+		        columns: data.values,
+			    type: 'bar',
+			    labels: true
+			  },
+			  axis: {
+			  	rotated: true,
+				  x: {
+				    show: false
+				  },
+				  y: {
+				    show: false,
+				  }
+			  },
+	          bar: {
+	            width: {
+				    ratio: 0.7
+				}
+	          },
+	          legend: {
+	            hide: true,
+	          },
+	          tooltip: {
+	          	show: false
+	          }
+	    });
+	}
 }

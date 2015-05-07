@@ -57,7 +57,9 @@ table
 
 .metric-chart {
 	height: 44% !important;
+	width: 100% !important;
 	border: none !important;
+	padding-left: 0px !important;
 }
 
 .scatterplot-settings {
