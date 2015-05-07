@@ -46,37 +46,37 @@
 	<div class="right-wrapper">
 		<div class="metrics-container">
 			<div>
-				<p>Total Play Time (s)</p>
+				<p><a href="#" onClick="updateSelectedAttribute('playTime')">Total Play Time (s)</a></p>
 				<p class="metric-value" id="metric-playtime">...</p>
 				<div class="metric-chart" id="chart-playtime"></div>
 			</div>
 			<div>
-				<p># Level Repeats</p>
+				<p><a href="#" onClick="updateSelectedAttribute('playCount')"># Level Repeats</a></p>
 				<p class="metric-value" id="metric-repeats">...</p>
 				<div class="metric-chart" id="chart-repeats"></div>
 			</div>
 			<div>
-				<p># Steps</p>
+				<p><a href="#" onClick="updateSelectedAttribute('steps')"># Steps</a></p>
 				<p class="metric-value" id="metric-steps">...</p>
 				<div class="metric-chart" id="chart-steps"></div>
 			</div>
 			<div>
-				<p># Deaths</p>
+				<p><a href="#" onClick="updateSelectedAttribute('deaths')"># Deaths</a></p>
 				<p class="metric-value" id="metric-deaths">...</p>
 				<div class="metric-chart" id="chart-deaths"></div>
 			</div>
 			<div>
-				<p># Angles Unlocked</p>
+				<p><a href="#" onClick="updateSelectedAttribute('anglesUnlocked')"># Angles Unlocked</a></p>
 				<p class="metric-value" id="metric-anglesunlocked">...</p>
 				<div class="metric-chart" id="chart-anglesunlocked"></div>
 			</div>
 			<div>
-				<p># Badges Earned</p>
+				<p><a href="#" onClick="updateSelectedAttribute('badgesEarned')"># Badges Earned</a></p>
 				<p class="metric-value" id="metric-badgesearned">...</p>
 				<div class="metric-chart" id="chart-badgesearned"></div>
 			</div>
 		</div>
-		<select name="chapter-metric" id="chapter-metric-select" onchange="updateAllCharts()">
+		<select name="chapter-metric" id="chapter-metric-select" onchange="updateAllCharts()" style="display:none">
 			  <option value="playTime">Play Time (s)</option> 
 			  <option value="playCount"># Level Repeats</option> 
 			  <option value="steps"># Steps</option> 

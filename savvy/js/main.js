@@ -307,6 +307,11 @@ function getAttributeSummaryForChapter(attributeName, ch, data)
 
 }
 
+function updateSelectedAttribute(attribute)
+{
+  document.getElementById("chapter-metric-select").value = attribute;
+  updateAllCharts();
+}
 
 function getSelectedAttribute()
 {
