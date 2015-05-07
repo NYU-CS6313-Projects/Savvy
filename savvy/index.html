@@ -9,7 +9,7 @@
 	<script src="js/c3.js"></script>
 	<title>Savvy</title>
 </head>
-<body>
+<body onload="updateGameKeyMetrics()">
 
 <div class="wrapper">
 	<div class="left-wrapper">
@@ -45,28 +45,28 @@
 	<div class="right-wrapper">
 		<div class="metrics-container">
 			<div>
-				<p>Avg. Play Time (s)</p>
-				<p class="metric-playtime">...</p>
+				<p>Total Play Time (s)</p>
+				<p id="metric-playtime">...</p>
+			</div>
+			<div>
+				<p># Level Repeats</p>
+				<p id="metric-repeats">...</p>
+			</div>
+			<div>
+				<p># Steps</p>
+				<p id="metric-steps">...</p>
 			</div>
 			<div>
 				<p># Deaths</p>
-				<p class="metric-deaths">...</p>
-			</div>
-			<div>
-				<p># Repeats</p>
-				<p class="metric-repeats">...</p>
+				<p id="metric-deaths">...</p>
 			</div>
 			<div>
 				<p># Angles Unlocked</p>
-				<p class="metric-anglesunlocked">...</p>
+				<p id="metric-anglesunlocked">...</p>
 			</div>
 			<div>
 				<p># Badges Earned</p>
-				<p class="metric-badgesearned">...</p>
-			</div>
-			<div>
-				<p>Bade Opt-in/out</p>
-				<p class="metric-badgeoptinout">...</p>
+				<p id="metric-badgesearned">...</p>
 			</div>
 		</div>
 		<select name="chapter-metric" id="chapter-metric-select" onchange="updateChapterAttributes()">
@@ -98,6 +98,7 @@
 
 <script src="js/main.js"></script>
 <script src="js/studentselection_chart.js"></script>
+<script src="js/game_keymetrics.js"></script>
 <!-- <script src="js/scatterplot_chart.js"></script> -->
 <script src="js/chapter_charts.js"></script>
 <script src="js/totalset_charts.js"></script>
