@@ -1,13 +1,5 @@
 var gameLog = loadJSON('data/gameLog.json');
 
-/******  SUBCLASSING  ******/
-Array.prototype.max = function() {
-  return Math.max.apply(null, this);
-};
-
-Array.prototype.min = function() {
-  return Math.min.apply(null, this);
-};
 
 /****** DATA LOADING ******/
 
@@ -37,6 +29,39 @@ function loadTextFileAjaxSync(filePath, mimeType)
     return null;
   }
 }
+
+
+
+/****** UTILITIES ******/
+
+function arrayMin(arr) {
+  var len = arr.length, min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+};
+
+function arrayMax(arr) {
+  var len = arr.length, max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+};
+
+function arraySum(arr) {
+   var sum = 0;
+   for(var i=0; i < arr.length; i++) 
+   { 
+      sum += arr[i]; 
+   }
+   return sum;
+};
 
 
 
@@ -77,7 +102,7 @@ function getCondition(condition, data)
 {
   studentData = [];
 
-  if (data)
+  if (data && data.length > 0)
   {
     for (student in data)
     {
@@ -102,11 +127,11 @@ function getCondition(condition, data)
 }
 
 
-function getChapters(chapterNumber, data)
+function getChapter(chapterNumber, data)
 {
   studentData = [];
 
-  if (data) {
+  if (data && data.length > 0) {
     for (student in data)
     {
       if (data[student].chapter == chapterNumber)
@@ -134,7 +159,7 @@ function getLevel(levelNumber, data)
 {
   studentData = [];
 
-  if (data) {
+  if (data && data.length > 0) {
     for (student in data)
     {
       if (data[student].level == levelNumber)
@@ -157,101 +182,30 @@ function getLevel(levelNumber, data)
   return studentData;
 }
 
-// function getAttribute(attributeName, data)
-// {
-//   attributeValues = [];
 
-//   if (data)
-//   {
-
-//   }
-//   else
-//   {
-//     for (student in gameLog)
-//     {
-//       if (gameLog[student].)
-//     }
-//   }
-
-//   return attributeValues;
-// }
-
-function getAttributeRANGE(attributeName, data)
+function getAttribute(attributeName, data)
 {
-  attributeRANGE = [];
+  attribute = [];
 
-  if (data)
+  if (data && data.length > 0)
   {
     for (student in data)
     {
-      attributeRANGE.push((data[student][attributeName]));
+      attribute.push((data[student][attributeName]));
     }
   }
   else
   {
     for (student in gameLog)
     {
-      attributeRANGE.push((gameLog[student][attributeName]));
+      attribute.push((gameLog[student][attributeName]));
     }
   }
 
-  return { 'max' : arrayMax(attributeRANGE), 'min' : arrayMin(attributeRANGE) };
+  return { 'sum': arraySum(attribute), 'max' : arrayMax(attribute), 'min' : arrayMin(attribute), 'array':attribute };
 }
 
 
-// function getAttributeSUM(attributeName, data)
-// {
-//   attributeSUM = [];
-
-//   // if (data)
-//   // {
-//     for (student in gameLog)
-//     {
-//       // if (data[dataAttribute].subjectCond == condition)
-//       // {
-//       //   studentData.push(data[student]);
-//       // }
-//       var row = {};
-//       row['chapter'] = gameLog[student].chapter;
-//       row['level'] = gameLog[student].level;
-//       row[attributeName] = gameLog[student][attributeName];
-
-//       // console.log(gameLog[student].attributeName);
-
-//       attributeSUM.push(row);
-//     }
-//   // }
-//   // else
-//   // {
-//   //   for (student in gameLog)
-//   //   {
-//   //     if (gameLog[student].subjectCond == condition)
-//   //     {
-//   //       studentData.push(gameLog[student]);
-//   //     }
-//   //   }
-//   // }
-
-//   return attributeSUM;
-// }
 
 
-function arrayMin(arr) {
-  var len = arr.length, min = Infinity;
-  while (len--) {
-    if (arr[len] < min) {
-      min = arr[len];
-    }
-  }
-  return min;
-};
 
-function arrayMax(arr) {
-  var len = arr.length, max = -Infinity;
-  while (len--) {
-    if (arr[len] > max) {
-      max = arr[len];
-    }
-  }
-  return max;
-};
