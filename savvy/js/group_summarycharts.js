@@ -31,7 +31,11 @@ function updateGroupSummaryCharts()
             }
           },
           tooltip: {
-            show: true
+            format: {
+                title: function (d) { return 'Level ' + d; },
+                name: function (name, ratio, id, index) { return selectedAttribute.name; },
+                value: d3.format(',')
+            }
           },
           point: {
             show: false
