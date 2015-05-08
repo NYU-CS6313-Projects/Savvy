@@ -40,6 +40,12 @@
 				</div>
 			</div>
 			<div class="scatterplot-chart">Loading...</div>
+
+			<!-- <div class="scatterplot-conditions"> -->
+			 <!--  <div><input type="checkbox" name="badges" value="12" id="noBadgesChecked" checked onclick="updateConditionSelection()"> No Badges<br></div>
+			  <div><input type="checkbox" name="noBadges" value="34" id="badgesChecked" checked onclick="updateConditionSelection()"> Aligned Badges</div> -->
+			<!-- </div> -->
+
 		</div>
 		<div class="playerselection-container">
 			<div id="studentselection-chart">
@@ -113,10 +119,17 @@
 	<div class="right-wrapper">
 		<div class="metrics-container">
 			<div class="statvalue-settings">
+				<div class=""><b>Statistical Value: </b>
+					<select name="statisticalValue" id="statisticalValue" onchange="updateStatisticalValue()" >
+					  <option value="sum" selected>Sum</option> 
+					  <option value="avg">Average</option>
+					  <!-- <option value="Average">Median</option> -->
+					</select>
+				</div>
 			</div>
 			<div  style="padding: 0 12px; height: 100%">
 				<div class="metric-box" id="metric-box-playTime">
-					<p><a href="#" onClick="updateSelectedAttribute('playTime')" class="metric-link metric-link-selected" id="metric-link-playTime">Total Play Time (s)</a></p>
+					<p><a href="#" onClick="updateSelectedAttribute('playTime')" class="metric-link metric-link-selected" id="metric-link-playTime">Play Time (s)</a></p>
 					<p class="metric-value" id="metric-playtime">...</p>
 					<div class="metric-chart" id="chart-playTime"></div>
 				</div>

@@ -11,12 +11,12 @@ function updateGameKeyMetrics(data)
 	var commaFormat = d3.format(',');
 
 
-	playTime.innerHTML = commaFormat(getAttribute('playTime', data).sum);
-	repeats.innerHTML = commaFormat(getAttribute('playCount', data).sum);
-	steps.innerHTML = commaFormat(getAttribute('steps', data).sum);
-	deaths.innerHTML = commaFormat(getAttribute('deaths', data).sum);
-	anglesUnlocked.innerHTML = commaFormat(getAttribute('anglesUnlocked', data).sum);
-	badgesEarned.innerHTML = commaFormat(getAttribute('badgesEarned', data).sum);
+	playTime.innerHTML = commaFormat(getAttribute('playTime', data)[statisticalValue]);
+	repeats.innerHTML = commaFormat(getAttribute('playCount', data)[statisticalValue]);
+	steps.innerHTML = commaFormat(getAttribute('steps', data)[statisticalValue]);
+	deaths.innerHTML = commaFormat(getAttribute('deaths', data)[statisticalValue]);
+	anglesUnlocked.innerHTML = commaFormat(getAttribute('anglesUnlocked', data)[statisticalValue]);
+	badgesEarned.innerHTML = commaFormat(getAttribute('badgesEarned', data)[statisticalValue]);
 
 }
 

@@ -13,7 +13,8 @@ LevelKeys[4] = 6;
 var studentIDS = [];
 var scatterplotChart;
 
-// var tt = document.getElementById("studentselection-chart").clientWidth;
+var statisticalValue = 'sum';
+
 
 
 function initViz()
@@ -201,7 +202,10 @@ function getAttribute(attributeName, data)
     }
   }
 
-  return { 'sum': arraySum(attribute), 'max' : arrayMax(attribute), 'min' : arrayMin(attribute), 'array':attribute };
+  var sum = arraySum(attribute);
+  var avg = parseFloat((sum/attribute.length).toFixed(2));
+
+  return { 'sum': sum, 'avg': avg, 'max' : arrayMax(attribute), 'min' : arrayMin(attribute), 'array':attribute };
 }
 
 
@@ -229,8 +233,8 @@ function getAttributeSummary(attributeName, data)
 
         var attribute = getAttribute(attributeName, levelData);
 
-        row[attributeName] = attribute.sum;
-        attributeSUM.push(attribute.sum);
+        row[attributeName] = attribute[statisticalValue];
+        attributeSUM.push(attribute[statisticalValue]);
 
       }
       else
@@ -250,8 +254,6 @@ function getAttributeSummary(attributeName, data)
 
 function generateEmptyGroup()
 {
-  console.log("generating empty group");
-
   var data = [];
 
   for (lv = 1; lv < LevelKeys[ch] + 1; lv++)
@@ -285,7 +287,7 @@ function getAttributeSummaryForChapter(attributeName, ch, data)
 
       var attribute = getAttribute(attributeName, levelData);
 
-      row[attributeName] = attribute.sum;
+      row[attributeName] = attribute[statisticalValue];
 
     }
     else
@@ -373,9 +375,9 @@ function getConditionSummary(attributeName, data)
   var attribute_Badges = getAttribute(attributeName, badges);
   var attribute_NoBadges = getAttribute(attributeName, noBadges);
 
-  var max = Math.max(attribute_Badges.sum, attribute_NoBadges.sum);
+  var max = Math.max(attribute_Badges[statisticalValue], attribute_NoBadges[statisticalValue]);
 
-  return { 'sum' : [['Badges', attribute_Badges.sum], ['No badges', attribute_NoBadges.sum]], 'max' : max };
+  return { 'sum' : [['Badges', attribute_Badges[statisticalValue]], ['No badges', attribute_NoBadges[statisticalValue]]], 'max' : max };
 }
 
 
@@ -433,3 +435,14 @@ function getScatterplotAxes()
   return {'xKey' : xAxisKey, 'xName' : xAxisName, 'yKey' : yAxisKey, 'yName' : yAxisName}
 }
 
+function updateStatisticalValue()
+{
+  var statValue = document.getElementById("statisticalValue");
+  statValueKey = statValue.options[statValue.selectedIndex].value;
+
+  statisticalValue = statValueKey;
+
+  // updateScatterplot();
+  updateSelection();
+  updateGameSummaryCharts();
+}

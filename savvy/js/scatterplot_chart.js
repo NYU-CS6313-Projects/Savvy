@@ -137,12 +137,7 @@ function updateScatterplot()
 
 function updateSelection()
 {
-  // console.log(" // updating selection");
-
   selectedStudents = getScatterplotSelection();
-
-  // console.log(studentIDS);
-
   updateStudentSelectionChart();
   updateGameKeyMetrics(selectedStudents);
   updateGameKeyCharts(selectedStudents);
@@ -175,4 +170,15 @@ function getScatterplotSelection()
 
   studentIDS = getStudentsWithID(scatterplotSelectionIDS);
   return studentIDS;
+}
+
+
+function updateConditionSelection() {
+
+  var badgesChecked = document.getElementById("badgesChecked").checked;
+  var noBadgesChecked = document.getElementById("noBadgesChecked").checked;
+
+  alert ("badges: " + badgesChecked + " - no badges: " + noBadgesChecked);
+
+
 }

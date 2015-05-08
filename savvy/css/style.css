@@ -193,3 +193,23 @@ a:link, a:visited {
 	border: solid 1px #000;
 	height: 33vh;
 }
+
+.scatterplot-conditions {
+	margin-top: 12px;
+}
+
+.scatterplot-conditions div {
+	float: left;
+	margin: 0 20px;
+}
+
+.statvalue-settings div {
+	float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    padding-left: 18px;
+    padding-right: 15px;
+}
+}
