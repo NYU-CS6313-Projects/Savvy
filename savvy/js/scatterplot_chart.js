@@ -8,7 +8,7 @@ function updateScatterplot()
     data: {
       json: studentDemographics,
       // onselected: function (d) { updateSelection() },
-      onunselected: function (d) { updateSelection() },
+      // onunselected: function (d) { updateSelection() },
       type: 'scatter',
       keys: {
           x: axes.xKey, 

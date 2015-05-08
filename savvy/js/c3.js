@@ -2514,15 +2514,18 @@
                 $$.showXGridFocus(selectedData);
 
                 // Show cursor as pointer if point is close to mouse position
-                if ($$.isBarType(closest.id) || $$.dist(closest, mouse) < 100) {
-                    $$.svg.select('.' + CLASS.eventRect).style('cursor', 'pointer');
-                    if (!$$.mouseover) {
-                        config.data_onmouseover.call($$.api, closest);
-                        $$.mouseover = closest;
-                    }
-                }
+                // if ($$.isBarType(closest.id) || $$.dist(closest, mouse) < 100) {
+                //     $$.svg.select('.' + CLASS.eventRect).style('cursor', 'pointer');
+                //     if (!$$.mouseover) {
+                //         config.data_onmouseover.call($$.api, closest);
+                //         $$.mouseover = closest;
+                //     }
+                // }
             })
             .on('click', function () {
+
+                console.log("click");
+
                 var targetsToShow = $$.filterTargetsToShow($$.data.targets);
                 var mouse, closest;
 
@@ -2533,21 +2536,24 @@
 
                 if (! closest) { return; }
 
+
+                // <-- this is where the onClick event happens
+
                 // select if selection enabled
-                if ($$.isBarType(closest.id) || $$.dist(closest, mouse) < 100) {
-                    $$.main.selectAll('.' + CLASS.shapes + $$.getTargetSelectorSuffix(closest.id)).selectAll('.' + CLASS.shape + '-' + closest.index).each(function () {
-                        if (config.data_selection_grouped || $$.isWithinShape(this, closest)) {
-                            $$.toggleShape(this, closest, closest.index);
-                            $$.config.data_onclick.call($$.api, closest, this);
-                        }
-                    });
-                }
+                // if ($$.isBarType(closest.id) || $$.dist(closest, mouse) < 100) {
+                //     $$.main.selectAll('.' + CLASS.shapes + $$.getTargetSelectorSuffix(closest.id)).selectAll('.' + CLASS.shape + '-' + closest.index).each(function () {
+                        // if (config.data_selection_grouped || $$.isWithinShape(this, closest)) {
+                        //     $$.toggleShape(this, closest, closest.index);
+                        //     $$.config.data_onclick.call($$.api, closest, this);
+                        // }
+                //     });
+                // }
             })
             .call(
                 config.data_selection_draggable && $$.drag ? (
                     d3.behavior.drag().origin(Object)
                         .on('drag', function () { $$.drag(d3.mouse(this)); })
-                        .on('dragstart', function () { $$.dragstart(d3.mouse(this));  })
+                        .on('dragstart', function () { $$.dragstart(d3.mouse(this)); })
                         .on('dragend', function () { $$.dragend(); console.log('dragend'); updateSelection();  })    /// <-- here I update selection on drag end
                 ) : function () {}
             );
