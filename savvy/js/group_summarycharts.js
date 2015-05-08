@@ -8,7 +8,12 @@ function updateGroupSummaryCharts(group)
   var max = getAttributeSummary(selectedAttribute.key).max;
 
   for (ch = 1; ch < 5; ch++) {
-    var data = getAttributeSummaryForChapter(selectedAttribute.key, ch, group);
+    
+    if (group.length > 0) {
+      var data = getAttributeSummaryForChapter(selectedAttribute.key, ch, group);
+    } else {
+      var data = generateEmptyGroup();
+    }
 
     var chart = c3.generate({
           bindto: '.chapter'+ch+'-chart',
@@ -18,7 +23,8 @@ function updateGroupSummaryCharts(group)
             keys: {
                 x: 'Level',
                 value: [selectedAttribute.key]
-            }
+            },
+            color: function (color, d) { return '#7570b3'; }
           },
           axis: {
             y: {

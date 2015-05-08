@@ -248,6 +248,22 @@ function getAttributeSummary(attributeName, data)
 
 }
 
+function generateEmptyGroup()
+{
+  console.log("generating empty group");
+
+  var data = [];
+
+  for (lv = 1; lv < LevelKeys[ch] + 1; lv++)
+  {
+    var row = {};
+    row['Chapter'] = ch;
+    row['Level'] = lv;
+    data.push(row);
+  }
+
+  return data;
+}
 
 function getAttributeSummaryForChapter(attributeName, ch, data)
 {
