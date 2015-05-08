@@ -1,6 +1,9 @@
 var studentDemographics = loadJSON('data/demographics.json');
 var gameLog = loadJSON('data/gameLog.json');
 
+var badgeColor = '#1b9e77';
+var noBadgeColor = '#d95f02';
+
 var LevelKeys = {};
 LevelKeys[1] = 9;
 LevelKeys[2] = 7;
@@ -13,6 +16,7 @@ var scatterplotChart;
 
 function initViz()
 {
+  // initColorScatterplot();
   updateScatterplot();
   // updateGameKeyMetrics();
   // updateGameKeyCharts();

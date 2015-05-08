@@ -39,8 +39,8 @@ function updateGameKeyCharts(data)
 			    	format: d3.format(',')
 			    },
 			    colors: {
-			    	'No badges': '#d95f02',
-				    'Badges': '#1b9e77',
+			    	'No badges': noBadgeColor,
+				    'Badges': badgeColor,
 				  },
 			  },
 			  axis: {

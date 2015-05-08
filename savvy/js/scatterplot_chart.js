@@ -1,5 +1,54 @@
+function initColorScatterplot()
+{
+  console.log("generating base scatterplot");
+
+  var axes = getScatterplotAxes();
+
+  var colorIndexScatterplot = c3.generate({
+    bindto: '.ss',
+    data: {
+      json: studentDemographics,
+      type: 'scatter',
+      keys: {
+          x: axes.xKey, 
+          value: [axes.yKey, 'ID']
+      },
+      hide: ['ID'],
+    axis: {
+      y: {
+        label: {
+          text: axes.yName,
+          position: 'inner-top'
+        } 
+      },
+      x: {
+        label: {
+          text: axes.xName,
+          position: 'inner-right',
+        }
+      }
+    }
+  }});
+
+  return colorIndexScatterplot;
+}
+
+function getConditionForStudent(id)
+{
+  for (student in studentDemographics)
+  {
+    if (id == studentDemographics[student].ID)
+    {
+      return studentDemographics[student].Condition;
+    }
+  }
+}
+
+
 function updateScatterplot()
 {
+  var colorIndexScatterplot = initColorScatterplot();
+  var scatterplotColorIndexes = colorIndexScatterplot.data()[1].values;
 
   var axes = getScatterplotAxes();
 
@@ -19,18 +68,35 @@ function updateScatterplot()
         draggable: true,
       },
       hide: ['ID'],
-      // color: function (color, d) {
-      //       // d will be 'id' when called for legends
-      //       // console.log("new point - " + d.id + " value - " + d.value);
-      //       console.log(d);
-      //       console.log("--")
-      //       gimmeMore(d);
-      //       console.log(color);
-      //       // return d3.rgb(color).darker(d.value / 150);
-      //       var cc = d3.select(d3.selectAll("circle")[0][d.index]).style("fill", "rgba(31, 119, 180, 1)");
+      color: function (color, d) {
+            
+          
+          var pointIndex = d.index;
+          var studentID;
 
-      //       return cc;
-      // }
+          // ** Get student ID
+          for (colorIndex in scatterplotColorIndexes)
+          {
+            if (pointIndex == scatterplotColorIndexes[colorIndex].index) {
+              studentID = scatterplotColorIndexes[colorIndex].value;
+            }
+          }
+
+          // ** Get condition for studentID
+          var condition = getConditionForStudent(studentID);
+
+          // console.log(pointIndex + " - " + studentID + " - " + condition);
+
+          if (condition == "Aligned Badges")
+          {
+            return badgeColor;
+          }
+          else
+          {
+            return noBadgeColor;
+          }
+
+      }
     },
     axis: {
       y: {
@@ -71,7 +137,7 @@ function updateScatterplot()
 
 function updateSelection()
 {
-  console.log(" // updating selection");
+  // console.log(" // updating selection");
 
   selectedStudents = getScatterplotSelection();
 

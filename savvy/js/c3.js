@@ -2552,9 +2552,14 @@
             .call(
                 config.data_selection_draggable && $$.drag ? (
                     d3.behavior.drag().origin(Object)
-                        .on('drag', function () { $$.drag(d3.mouse(this)); })
-                        .on('dragstart', function () { $$.dragstart(d3.mouse(this)); })
-                        .on('dragend', function () { $$.dragend(); console.log('dragend'); updateSelection();  })    /// <-- here I update selection on drag end
+                        .on('drag', function () { $$.drag(d3.mouse(this)); $$.svg.select('.' + CLASS.eventRect).style('cursor', 'crosshair'); })
+                        .on('dragstart', function () { $$.dragstart(d3.mouse(this));  })
+                        .on('dragend', function () { 
+                                                        $$.dragend();
+                                                        // console.log('dragend');
+                                                        $$.svg.select('.' + CLASS.eventRect).style('cursor', 'default');
+                                                        updateSelection();
+                                                    })    /// <-- here I update selection on drag end
                 ) : function () {}
             );
     };
