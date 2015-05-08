@@ -18,8 +18,8 @@ var scatterplotChart;
 
 function initViz()
 {
-   // alert(window.innerHeight);
-  // initColorScatterplot();
+  updateSelectedAttributeStyle('playTime');
+
   updateScatterplot();
   // updateGameKeyMetrics();
   // updateGameKeyCharts();
@@ -383,7 +383,28 @@ function getConditionSummary(attributeName, data)
 function updateSelectedAttribute(attribute)
 {
   document.getElementById("chapter-metric-select").value = attribute;
+
+  updateSelectedAttributeStyle(attribute);
   updateAllCharts();
+}
+
+function updateSelectedAttributeStyle(attribute) {
+  
+  var metricKeys = ['playTime', 'playCount', 'steps', 'deaths', 'anglesUnlocked', 'badgesEarned'];
+
+  for (metric in metricKeys) {
+    var metricBox = document.getElementById('metric-box-'+metricKeys[metric]);
+    metricBox.className = 'metric-box';
+
+    var metricLink = document.getElementById('metric-link-'+metricKeys[metric]);
+    metricLink.className = 'metric-link';
+  }
+
+  var metricBoxSelected = document.getElementById('metric-box-'+attribute);
+  metricBoxSelected.className += ' metric-box-selected';
+
+  var metricLinkSelected = document.getElementById('metric-link-'+attribute);
+  metricLinkSelected.className += ' metric-link-selected';
 }
 
 function getSelectedAttribute()
