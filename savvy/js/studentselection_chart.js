@@ -16,6 +16,8 @@ function updateStudentSelectionChart()
         box.className += ' student-selected';
     }
 
+    var selectedLabel = document.getElementById('studentselection-selected');
+    selectedLabel.innerHTML = "Selected: " + group.length;
 }
 
 

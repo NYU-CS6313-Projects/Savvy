@@ -2524,7 +2524,7 @@
             })
             .on('click', function () {
 
-                console.log("click");
+                // console.log("click");
 
                 var targetsToShow = $$.filterTargetsToShow($$.data.targets);
                 var mouse, closest;

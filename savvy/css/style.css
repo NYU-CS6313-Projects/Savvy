@@ -89,15 +89,13 @@ table
 	height: 85%;
 }
 
-.studentselection-chart {
-	width: 100%;
-	height: 100%;
-	padding: 15px
+#studentselection-chart {
+	margin: 1vh 0.5vw;
 }
 
 .student-row {
 	padding-top: 0.8152vh;
-	padding-bottom: 2.7173vh;
+	padding-bottom: 3.3vh;
 }
 
 .student-box
@@ -105,10 +103,9 @@ table
 	float: left;
 	background-color: rgb(240, 240, 240);
 	border: solid 1px rgb(211, 211, 211);
-	width: 1.4265vw;
-	height: 2.7173vh;
-	margin-left: 0.4279vw;
-	margin-right: 0.4279vw;
+	width: 1.7vw;
+  	height: 3.25vh;
+  	margin: 0 0.25vw;
 
 	/*width: 20px;*/
 	/*height: 1.4265vw;*/
@@ -121,6 +118,22 @@ table
 {
   background-color: #7570b3 !important;
   border-color: #413B86 !important;
+}
+
+.studentselection-chartfooter {
+	margin-top: 2vh;
+}
+
+.studentselection-selected {
+	margin-left: 0.4279vw;
+	margin-right: 0.4279vw;
+	float: left;
+}
+
+.studentselection-total {
+	margin-left: 0.4279vw;
+	margin-right: 0.4279vw;
+	float: right;
 }
 
 .chapter-container,  .totalset-container{
