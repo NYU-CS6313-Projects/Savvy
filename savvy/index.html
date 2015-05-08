@@ -16,20 +16,20 @@
 	<div class="left-wrapper">
 		<div class="scatterplot-container">
 			<div class="scatterplot-settings">
-				<div class=""><b>X: </b>
-					<select name="scatterplot-xaxis">
-					  <option value="PreGeoSum" selected>Pre Knowledge Score</option> 
-					  <option value="PostGeoSum">Post Knowledge Score</option>
+				<div class=""><b>Y: </b>
+					<select name="scatterplot-yAxis" id="scatterplot-yAxis" onchange="updateScatterplot()" >
+					  <option value="PreGeoSum">Pre Knowledge Score</option> 
+					  <option value="PostGeoSum" selected>Post Knowledge Score</option>
 					  <option value="SIC_SUM">Situational Interest</option>
 					  <option value="IIGeo_SUM">Interest in Geometry</option>
 					  <option value="IIGC_SUM">Interest in Games</option>
 					  <option value="BIS_SUM">Interest in Badges</option>
 					</select>
 				</div>
-				<div class=""><b>Y: </b>
-					<select name="scatterplot-yaxis">
-					  <option value="PreGeoSum">Pre Knowledge Score</option> 
-					  <option value="PostGeoSum" selected>Post Knowledge Score</option>
+				<div class=""><b>X: </b>
+					<select name="scatterplot-xAxis" id="scatterplot-xAxis" onchange="updateScatterplot()" >
+					  <option value="PreGeoSum" selected>Pre Knowledge Score</option> 
+					  <option value="PostGeoSum">Post Knowledge Score</option>
 					  <option value="SIC_SUM">Situational Interest</option>
 					  <option value="IIGeo_SUM">Interest in Geometry</option>
 					  <option value="IIGC_SUM">Interest in Games</option>
@@ -103,7 +103,7 @@
 
 
 <script src="js/main.js"></script>
-<!-- <script src="js/scatterplot_chart.js"></script> -->
+<script src="js/scatterplot_chart.js"></script>
 <script src="js/studentselection_chart.js"></script>
 <script src="js/game_keymetrics.js"></script>
 <script src="js/group_summarycharts.js"></script>

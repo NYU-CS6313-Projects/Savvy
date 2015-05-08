@@ -1,3 +1,4 @@
+var studentDemographics = loadJSON('data/studentDemographics.json');
 var gameLog = loadJSON('data/gameLog.json');
 
 var LevelKeys = {};
@@ -11,6 +12,7 @@ LevelKeys[4] = 6;
 
 function initViz()
 {
+  updateScatterplot();
   updateGameKeyMetrics();
   updateGameKeyCharts();
   updateAllCharts();
@@ -353,4 +355,19 @@ function getSelectedAttribute()
   return {'key' : chapterAttributeKey, 'name' : chapterAttributeName}
 }
 
+
+
+function getScatterplotAxes()
+{
+  var xAxis = document.getElementById("scatterplot-xAxis");
+  var yAxis = document.getElementById("scatterplot-yAxis");
+
+  xAxisKey = xAxis.options[xAxis.selectedIndex].value;
+  xAxisName = xAxis.options[xAxis.selectedIndex].innerHTML;  
+
+  yAxisKey = yAxis.options[yAxis.selectedIndex].value;
+  yAxisName = yAxis.options[yAxis.selectedIndex].innerHTML;
+
+  return {'xKey' : xAxisKey, 'xName' : xAxisName, 'yKey' : yAxisKey, 'yName' : yAxisName}
+}
 

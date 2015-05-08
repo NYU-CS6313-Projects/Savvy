@@ -1,50 +1,44 @@
-  var _dataPath = 'data/studentData.csv';
+function updateScatterplot()
+{
 
-  d3.csv( _dataPath, function ( d ) {
+  var axes = getScatterplotAxes();
 
-    var data = d;
-    return data;
-
-  }, function( error, data ) {
-
-    if (!error)
-    {
-
-      var chart = c3.generate({
-        bindto: '.scatterplot-chart',
-        data: {
-          json: data,
-          type: 'scatter',
-          keys: {
-              x: 'PreGeoSum',
-              value: ['PostGeoSum']
-          }
-        },
-        axis: {
-          y: {
-            label: {
-              text: 'Post Knowledge Score',
-              position: 'inner-top'
-            } 
-          },
-          x: {
-            label: {
-              text: 'Pre Knowledge Score',
-              position: 'inner-right'
-            }
-          }
-        },
-        tooltip: {
-          show: true
-        },
-        point: {
-          show: false
-        },
-        legend: {
-          hide: true,
-
+  var chart = c3.generate({
+    bindto: '.scatterplot-chart',
+    data: {
+      json: studentDemographics,
+      type: 'scatter',
+      keys: {
+          x: axes.xKey,
+          value: [axes.yKey]
+      }
+    },
+    axis: {
+      y: {
+        label: {
+          text: axes.yName,
+          position: 'inner-top'
+        } 
+      },
+      x: {
+        label: {
+          text: axes.xName,
+          position: 'inner-right'
         }
-      });
+      }
+    },
+    tooltip: {
+      show: true
+    },
+    point: {
+      show: false
+    },
+    legend: {
+      hide: true,
 
     }
   });
+
+}
+
+

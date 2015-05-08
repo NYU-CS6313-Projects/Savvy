@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<style>
+body {
+  font: 11px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+</style>
+<!-- Load c3.css -->
+<link href="C3/c3.min.css" rel="stylesheet" type="text/css">
+
+<!-- Load d3.js and c3.js -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="C3/c3.min.js"></script>
+</head>
+<body>
+<div id="chart"></div>
+<script>
+	var chart = c3.generate({
+    data: {
+        xs: {
+            AlignedBadges: 'alligned_pregeosum',
+            NoBadges: 'no_pregeosum',
+			RandomBadges: 'random_pregeosum',
+        },
+        // iris data from R
+        columns: [
+            ["alligned_pregeosum", 1,4,10,1,10,0,8,8,8,3,10,9,0,12,8,5,8,6,10,11,10,1,9,4,7,9,5,0,9,10,3,9,2,11,5,6,10,14,6,12,6,12,10,1,7,1,6,1,7,3,3,14,14,0,9,5,12,11,3,10,6,8],
+            ["no_pregeosum", 9,4,9,8,7,12,10,10,6,5,6,6,3,11,8,6,5,0,13,10,10,10,12,11,6,4,7,9,7,6,11,12,12,0,7,11,4,9,11,9,12,1],
+			["random_pregeosum", 9,1,4,11,13,7,9,7,3,11,6,12,5,11,11,9,12,9,9],
+            ["AlignedBadges", 3,8,8,8,8,0,10,9,12,8,17,16,0,11,12,12,5,8,10,12,9,12,11,6,5,10,13,2,9,11,9,7,3,13,12,17,11,15,8,17,10,12,3,7,10,3,7,8,3,0,8,17,14,2,12,10,16,12,10,10,10,13],
+            ["NoBadges", 12,6,11,10,12,15,12,13,7,6,7,13,3,12,7,12,8,3,13,10,14,16,13,14,8,9,8,3,4,7,10,9,11,2,9,12,6,10,11,12,13,10],
+			["RandomBadges",13,1,5,13,12,7,7,12,4,12,9,15,10,15,11,10,16,15,11],
+        ],
+        type: 'scatter'
+
+    },
+    axis: {
+        x: {
+            label: 'Post Geo Sum',
+            tick: {
+                fit: false
+            }
+        },
+        y: {
+            label: 'Pre Geo Sum'
+        }
+    },
+	legend:{
+        position: 'right'
+	}
+});
+</script>
+</body>
+</html>
