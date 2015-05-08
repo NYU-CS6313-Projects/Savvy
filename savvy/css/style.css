@@ -59,9 +59,11 @@ a:link, a:visited {
 
 .metric-box {
 	margin: 0 0.12vw;
-	width: 16%;
+	/*width: 16%;*/
+	width: 10.55vw;
+	height: 22.43vh;
 	/* height: 100%; */
-	height: 73%;
+	/*height: 73%;*/
 	display: inline-block;
 	
 	padding-left: 12px;	
