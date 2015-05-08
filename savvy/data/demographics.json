@@ -1,6 +1,8 @@
 [
   {
     "ID":3001,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":1,
     "PostGeoSum":3,
     "PrePostGeoGain":2,
@@ -14,6 +16,8 @@
   },
   {
     "ID":3002,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":4,
     "PostGeoSum":8,
     "PrePostGeoGain":4,
@@ -27,6 +31,8 @@
   },
   {
     "ID":3003,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":10,
     "PostGeoSum":8,
     "PrePostGeoGain":-2,
@@ -40,6 +46,8 @@
   },
   {
     "ID":3004,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":1,
     "PostGeoSum":8,
     "PrePostGeoGain":7,
@@ -53,6 +61,8 @@
   },
   {
     "ID":3005,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":10,
     "PostGeoSum":8,
     "PrePostGeoGain":-2,
@@ -66,6 +76,8 @@
   },
   {
     "ID":3007,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":8,
     "PostGeoSum":10,
     "PrePostGeoGain":2,
@@ -79,6 +91,8 @@
   },
   {
     "ID":3008,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":8,
     "PostGeoSum":9,
     "PrePostGeoGain":1,
@@ -92,6 +106,8 @@
   },
   {
     "ID":3009,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":8,
     "PostGeoSum":12,
     "PrePostGeoGain":4,
@@ -105,6 +121,8 @@
   },
   {
     "ID":3011,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":3,
     "PostGeoSum":8,
     "PrePostGeoGain":5,
@@ -118,6 +136,8 @@
   },
   {
     "ID":3013,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":10,
     "PostGeoSum":17,
     "PrePostGeoGain":7,
@@ -131,6 +151,8 @@
   },
   {
     "ID":3014,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":9,
     "PostGeoSum":16,
     "PrePostGeoGain":7,
@@ -144,6 +166,8 @@
   },
   {
     "ID":3016,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":0,
     "PostGeoSum":0,
     "PrePostGeoGain":0,
@@ -157,6 +181,8 @@
   },
   {
     "ID":3017,
+    "Condition":"Aligned Badges",
+    "VisitDate":"31-Mar-14",
     "PreGeoSum":12,
     "PostGeoSum":11,
     "PrePostGeoGain":-1,
@@ -170,6 +196,8 @@
   },
   {
     "ID":3101,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":8,
     "PostGeoSum":12,
     "PrePostGeoGain":4,
@@ -183,6 +211,8 @@
   },
   {
     "ID":3102,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":5,
     "PostGeoSum":12,
     "PrePostGeoGain":7,
@@ -196,6 +226,8 @@
   },
   {
     "ID":3103,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":9,
     "PostGeoSum":12,
     "PrePostGeoGain":3,
@@ -209,6 +241,8 @@
   },
   {
     "ID":3104,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":8,
     "PostGeoSum":5,
     "PrePostGeoGain":-3,
@@ -222,6 +256,8 @@
   },
   {
     "ID":3105,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":4,
     "PostGeoSum":6,
     "PrePostGeoGain":2,
@@ -235,6 +271,8 @@
   },
   {
     "ID":3106,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":6,
     "PostGeoSum":8,
     "PrePostGeoGain":2,
@@ -248,6 +286,8 @@
   },
   {
     "ID":3107,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":9,
     "PostGeoSum":11,
     "PrePostGeoGain":2,
@@ -261,6 +301,8 @@
   },
   {
     "ID":3108,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":10,
     "PostGeoSum":10,
     "PrePostGeoGain":0,
@@ -274,6 +316,8 @@
   },
   {
     "ID":3109,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":8,
     "PostGeoSum":10,
     "PrePostGeoGain":2,
@@ -287,6 +331,8 @@
   },
   {
     "ID":3110,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":11,
     "PostGeoSum":12,
     "PrePostGeoGain":1,
@@ -300,6 +346,8 @@
   },
   {
     "ID":3111,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":7,
     "PostGeoSum":12,
     "PrePostGeoGain":5,
@@ -313,6 +361,8 @@
   },
   {
     "ID":3112,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":12,
     "PostGeoSum":15,
     "PrePostGeoGain":3,
@@ -326,6 +376,8 @@
   },
   {
     "ID":3113,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":10,
     "PostGeoSum":12,
     "PrePostGeoGain":2,
@@ -339,6 +391,8 @@
   },
   {
     "ID":3114,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":10,
     "PostGeoSum":9,
     "PrePostGeoGain":-1,
@@ -352,6 +406,8 @@
   },
   {
     "ID":3115,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":10,
     "PostGeoSum":13,
     "PrePostGeoGain":3,
@@ -365,6 +421,8 @@
   },
   {
     "ID":3116,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":1,
     "PostGeoSum":12,
     "PrePostGeoGain":11,
@@ -378,6 +436,8 @@
   },
   {
     "ID":3117,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":6,
     "PostGeoSum":7,
     "PrePostGeoGain":1,
@@ -391,6 +451,8 @@
   },
   {
     "ID":3118,
+    "Condition":"No Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":5,
     "PostGeoSum":6,
     "PrePostGeoGain":1,
@@ -404,6 +466,8 @@
   },
   {
     "ID":3119,
+    "Condition":"Aligned Badges",
+    "VisitDate":"8-May-14",
     "PreGeoSum":9,
     "PostGeoSum":11,
     "PrePostGeoGain":2,
@@ -417,6 +481,8 @@
   },
   {
     "ID":3201,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":4,
     "PostGeoSum":6,
     "PrePostGeoGain":2,
@@ -430,6 +496,8 @@
   },
   {
     "ID":3202,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":7,
     "PostGeoSum":5,
     "PrePostGeoGain":-2,
@@ -443,6 +511,8 @@
   },
   {
     "ID":3203,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":6,
     "PostGeoSum":7,
     "PrePostGeoGain":1,
@@ -456,6 +526,8 @@
   },
   {
     "ID":3204,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":9,
     "PostGeoSum":10,
     "PrePostGeoGain":1,
@@ -469,6 +541,8 @@
   },
   {
     "ID":3205,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":6,
     "PostGeoSum":13,
     "PrePostGeoGain":7,
@@ -482,6 +556,8 @@
   },
   {
     "ID":3206,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":3,
     "PostGeoSum":3,
     "PrePostGeoGain":0,
@@ -495,6 +571,8 @@
   },
   {
     "ID":3207,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":11,
     "PostGeoSum":12,
     "PrePostGeoGain":1,
@@ -508,6 +586,8 @@
   },
   {
     "ID":3208,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":5,
     "PostGeoSum":13,
     "PrePostGeoGain":8,
@@ -521,6 +601,8 @@
   },
   {
     "ID":3209,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":0,
     "PostGeoSum":2,
     "PrePostGeoGain":2,
@@ -534,6 +616,8 @@
   },
   {
     "ID":3211,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":9,
     "PostGeoSum":9,
     "PrePostGeoGain":0,
@@ -547,6 +631,8 @@
   },
   {
     "ID":3212,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":8,
     "PostGeoSum":7,
     "PrePostGeoGain":-1,
@@ -560,6 +646,8 @@
   },
   {
     "ID":3213,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":6,
     "PostGeoSum":12,
     "PrePostGeoGain":6,
@@ -573,6 +661,8 @@
   },
   {
     "ID":3214,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":10,
     "PostGeoSum":11,
     "PrePostGeoGain":1,
@@ -586,6 +676,8 @@
   },
   {
     "ID":3216,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":3,
     "PostGeoSum":9,
     "PrePostGeoGain":6,
@@ -599,6 +691,8 @@
   },
   {
     "ID":3217,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":5,
     "PostGeoSum":8,
     "PrePostGeoGain":3,
@@ -612,6 +706,8 @@
   },
   {
     "ID":3219,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":0,
     "PostGeoSum":3,
     "PrePostGeoGain":3,
@@ -625,6 +721,8 @@
   },
   {
     "ID":3220,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":9,
     "PostGeoSum":7,
     "PrePostGeoGain":-2,
@@ -638,6 +736,8 @@
   },
   {
     "ID":3221,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":13,
     "PostGeoSum":13,
     "PrePostGeoGain":0,
@@ -651,6 +751,8 @@
   },
   {
     "ID":3222,
+    "Condition":"No Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":10,
     "PostGeoSum":10,
     "PrePostGeoGain":0,
@@ -664,6 +766,8 @@
   },
   {
     "ID":3223,
+    "Condition":"Aligned Badges",
+    "VisitDate":"9-May-14",
     "PreGeoSum":2,
     "PostGeoSum":3,
     "PrePostGeoGain":1,

@@ -3,7 +3,7 @@ function updateScatterplot()
 
   var axes = getScatterplotAxes();
 
-  var chart = c3.generate({
+  var scatterplotChart = c3.generate({
     bindto: '.scatterplot-chart',
     data: {
       json: studentDemographics,
@@ -23,7 +23,7 @@ function updateScatterplot()
       x: {
         label: {
           text: axes.xName,
-          position: 'inner-right'
+          position: 'inner-right',
         }
       }
     },
@@ -38,6 +38,8 @@ function updateScatterplot()
 
     }
   });
+
+  return scatterplotChart;
 
 }
 

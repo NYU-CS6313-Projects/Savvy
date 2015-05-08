@@ -1,4 +1,4 @@
-var studentDemographics = loadJSON('data/studentDemographics.json');
+var studentDemographics = loadJSON('data/demographics.json');
 var gameLog = loadJSON('data/gameLog.json');
 
 var LevelKeys = {};
