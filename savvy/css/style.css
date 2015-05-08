@@ -2,10 +2,16 @@ div {
 	box-sizing: border-box;
 	font-size: 12px;
 }
+
 table
 {
 	width: 100px;
 }
+
+.c3-circle {
+  opacity: 1 !important;
+}
+
 .wrapper {
 	margin-top: 4px;
 	margin-left: 6px;
