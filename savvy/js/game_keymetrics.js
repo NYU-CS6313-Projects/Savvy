@@ -32,7 +32,7 @@ function updateGameKeyCharts(data)
 		var chart = c3.generate({
 	          bindto: '#chart-'+metricKeys[metric],
 	          data: {
-		        columns: data.values,
+		        columns: data.sum,
 			    type: 'bar',
 			    labels: {
 			    	format: d3.format(',')

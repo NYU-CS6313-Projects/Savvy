@@ -7,7 +7,8 @@ LevelKeys[2] = 7;
 LevelKeys[3] = 8;
 LevelKeys[4] = 6;
 
-
+var studentIDS = [];
+var scatterplotChart;
 
 
 function initViz()
@@ -334,7 +335,7 @@ function getConditionSummary(attributeName, data)
 
   var max = Math.max(attribute_Badges.sum, attribute_NoBadges.sum);
 
-  return { 'values' : [['Badges', attribute_Badges.sum], ['No badges', attribute_NoBadges.sum]], 'max' : max };
+  return { 'sum' : [['Badges', attribute_Badges.sum], ['No badges', attribute_NoBadges.sum]], 'max' : max };
 }
 
 

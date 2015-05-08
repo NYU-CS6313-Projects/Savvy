@@ -3,27 +3,34 @@ function updateScatterplot()
 
   var axes = getScatterplotAxes();
 
-  var scatterplotChart = c3.generate({
+  scatterplotChart = c3.generate({
     bindto: '.scatterplot-chart',
     data: {
       json: studentDemographics,
+      onselected: function (d) { updateSelection() },
+      onunselected: function (d) { updateSelection() },
       type: 'scatter',
       keys: {
-          x: axes.xKey,
-          value: [axes.yKey], 
+          x: axes.xKey, 
+          value: [axes.yKey, 'ID']
       },
-      color: function (color, d) {
-            // d will be 'id' when called for legends
-            // console.log("new point - " + d.id + " value - " + d.value);
-            console.log(d);
-            console.log("--")
-            gimmeMore(d);
-            console.log(color);
-            // return d3.rgb(color).darker(d.value / 150);
-            var cc = d3.select(d3.selectAll("circle")[0][d.index]).style("fill", "rgba(31, 119, 180, 1)");
+      selection: {
+        enabled: true,
+        draggable: true,
+      },
+      hide: ['ID'],
+      // color: function (color, d) {
+      //       // d will be 'id' when called for legends
+      //       // console.log("new point - " + d.id + " value - " + d.value);
+      //       console.log(d);
+      //       console.log("--")
+      //       gimmeMore(d);
+      //       console.log(color);
+      //       // return d3.rgb(color).darker(d.value / 150);
+      //       var cc = d3.select(d3.selectAll("circle")[0][d.index]).style("fill", "rgba(31, 119, 180, 1)");
 
-            return cc;
-      }
+      //       return cc;
+      // }
     },
     axis: {
       y: {
@@ -52,18 +59,50 @@ function updateScatterplot()
     point: {
       r: 3,
     },
-     onclick: function(d,i){
-            //console.log(d);
-            alert(d)
-    },
-    
   });
+
+  
+  updateSelection();
 
   return scatterplotChart;
 
 }
 
-function gimmeMore(dataPoint)
+
+function updateSelection()
 {
-  console.log(studentDemographics[dataPoint.index]);
+  var ids = getScatterplotSelection();
+  var studentIDS = getStudentsWithID(ids);
+
+  console.log(ids);
+  console.log(studentIDS);
+
+  updateGameKeyMetrics(studentIDS);
+  // updateGameKeyCharts(studentIDS);
+}
+
+
+function getScatterplotSelection()
+{
+  var studentIDs = [];
+
+  if(scatterplotChart.data())
+  {
+    var scatterplotIndexes = scatterplotChart.data()[1].values;
+    var selectedGroup = scatterplotChart.selected();
+
+    for (student in selectedGroup) {
+      var index = selectedGroup[student].index;
+      
+      for (scatterplotIndex in scatterplotIndexes)
+      {
+        if (index == scatterplotIndexes[scatterplotIndex].index) {
+          studentIDs.push(scatterplotIndexes[scatterplotIndex].value);
+        }
+      }
+
+    }
+  }
+  // console.log(studentIDs);
+  return studentIDs;
 }
