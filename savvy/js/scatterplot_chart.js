@@ -7,7 +7,7 @@ function updateScatterplot()
     bindto: '.scatterplot-chart',
     data: {
       json: studentDemographics,
-      onselected: function (d) { updateSelection() },
+      // onselected: function (d) { updateSelection() },
       onunselected: function (d) { updateSelection() },
       type: 'scatter',
       keys: {

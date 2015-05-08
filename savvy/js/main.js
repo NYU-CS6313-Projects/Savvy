@@ -327,13 +327,13 @@ function getConditionSummary(attributeName, data)
 
     if (badges.length == 0)
     {
-      console.log("POPULATING BADGES");
+      // console.log("POPULATING BADGES");
       badges.push('999999');
     }
 
     if (noBadges.length == 0)
     {
-      console.log("POPULATING NO BADGES");
+      // console.log("POPULATING NO BADGES");
       noBadges.push('999999');
     }
 

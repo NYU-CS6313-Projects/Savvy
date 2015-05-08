@@ -2446,7 +2446,7 @@
                         .on('drag', function () { $$.drag(d3.mouse(this)); })
                         .on('dragstart', function () { $$.dragstart(d3.mouse(this)); })
                         .on('dragend', function () { $$.dragend(); })
-                ) : function () {}
+                ) : function () { }
             );
     };
 
@@ -2547,8 +2547,8 @@
                 config.data_selection_draggable && $$.drag ? (
                     d3.behavior.drag().origin(Object)
                         .on('drag', function () { $$.drag(d3.mouse(this)); })
-                        .on('dragstart', function () { $$.dragstart(d3.mouse(this)); })
-                        .on('dragend', function () { $$.dragend(); })
+                        .on('dragstart', function () { $$.dragstart(d3.mouse(this));  })
+                        .on('dragend', function () { $$.dragend(); console.log('dragend'); updateSelection();  })    /// <-- here I update selection on drag end
                 ) : function () {}
             );
     };
