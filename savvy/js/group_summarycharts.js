@@ -1,6 +1,8 @@
-function updateGroupSummaryCharts()
+function updateGroupSummaryCharts(group)
 {
-  var group = getStudentsWithID([3001, 3002, 3003, 3004, 3005, 3013, 3014, 3016, 3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108]);
+  // var group = getStudentsWithID([3001, 3002, 3003, 3004, 3005, 3013, 3014, 3016, 3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108]);
+
+  var group = selectedStudents;
 
   var selectedAttribute = getSelectedAttribute();
   var max = getAttributeSummary(selectedAttribute.key).max;

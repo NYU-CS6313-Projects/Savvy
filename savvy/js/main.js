@@ -14,8 +14,8 @@ var scatterplotChart;
 function initViz()
 {
   updateScatterplot();
-  updateGameKeyMetrics();
-  updateGameKeyCharts();
+  // updateGameKeyMetrics();
+  // updateGameKeyCharts();
   updateAllCharts();
 }
 
@@ -316,6 +316,7 @@ function getCondition(condition, data)
 
 function getConditionSummary(attributeName, data)
 {
+  // console.log("---- running getConditionSummary for: + " + attributeName + "---")
   var badges;
   var noBadges;
 
@@ -323,6 +324,22 @@ function getConditionSummary(attributeName, data)
   {
     badges = getCondition('level badges', data);
     noBadges = getCondition('no badges', data);
+
+    if (badges.length == 0)
+    {
+      console.log("POPULATING BADGES");
+      badges.push('999999');
+    }
+
+    if (noBadges.length == 0)
+    {
+      console.log("POPULATING NO BADGES");
+      noBadges.push('999999');
+    }
+
+    // console.log("badges = " + badges);
+    // console.log("no badges = " + noBadges);
+
   }
   else
   {

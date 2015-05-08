@@ -71,20 +71,22 @@ function updateScatterplot()
 
 function updateSelection()
 {
-  var ids = getScatterplotSelection();
-  var studentIDS = getStudentsWithID(ids);
+  console.log(" // updating selection");
 
-  console.log(ids);
-  console.log(studentIDS);
+  selectedStudents = getScatterplotSelection();
 
-  updateGameKeyMetrics(studentIDS);
-  // updateGameKeyCharts(studentIDS);
+  // console.log(studentIDS);
+
+  updateGameKeyMetrics(selectedStudents);
+  updateGameKeyCharts(selectedStudents);
+  updateGroupSummaryCharts();
 }
 
 
 function getScatterplotSelection()
 {
-  var studentIDs = [];
+  var ids = [];
+  var studentIDS = [];
 
   if(scatterplotChart.data())
   {
@@ -97,12 +99,13 @@ function getScatterplotSelection()
       for (scatterplotIndex in scatterplotIndexes)
       {
         if (index == scatterplotIndexes[scatterplotIndex].index) {
-          studentIDs.push(scatterplotIndexes[scatterplotIndex].value);
+          ids.push(scatterplotIndexes[scatterplotIndex].value);
         }
       }
 
     }
   }
-  // console.log(studentIDs);
-  return studentIDs;
+
+  studentIDS = getStudentsWithID(ids);
+  return studentIDS;
 }

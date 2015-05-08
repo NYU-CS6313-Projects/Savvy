@@ -26,13 +26,14 @@ function updateGameKeyCharts(data)
 
 	for (metric in metricKeys)
 	{
+		// console.log("** updating : " + metricKeys[metric]);
 
-		var data = getConditionSummary(metricKeys[metric], data);
+		var metricData = getConditionSummary(metricKeys[metric], data);
 
 		var chart = c3.generate({
 	          bindto: '#chart-'+metricKeys[metric],
 	          data: {
-		        columns: data.sum,
+		        columns: metricData.sum,
 			    type: 'bar',
 			    labels: {
 			    	format: d3.format(',')
