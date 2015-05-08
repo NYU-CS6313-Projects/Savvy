@@ -8,13 +8,15 @@ function updateGameKeyMetrics(data)
 	var anglesUnlocked = document.getElementById("metric-anglesunlocked");
 	var badgesEarned = document.getElementById("metric-badgesearned");
 
+	var commaFormat = d3.format(',');
 
-	playTime.innerHTML = getAttribute('playTime', data).sum;
-	repeats.innerHTML = getAttribute('playCount', data).sum;
-	steps.innerHTML = getAttribute('steps', data).sum;
-	deaths.innerHTML = getAttribute('deaths', data).sum;
-	anglesUnlocked.innerHTML = getAttribute('anglesUnlocked', data).sum;
-	badgesEarned.innerHTML = getAttribute('badgesEarned', data).sum;
+
+	playTime.innerHTML = commaFormat(getAttribute('playTime', data).sum);
+	repeats.innerHTML = commaFormat(getAttribute('playCount', data).sum);
+	steps.innerHTML = commaFormat(getAttribute('steps', data).sum);
+	deaths.innerHTML = commaFormat(getAttribute('deaths', data).sum);
+	anglesUnlocked.innerHTML = commaFormat(getAttribute('anglesUnlocked', data).sum);
+	badgesEarned.innerHTML = commaFormat(getAttribute('badgesEarned', data).sum);
 
 }
 
@@ -32,7 +34,9 @@ function updateGameKeyCharts(data)
 	          data: {
 		        columns: data.values,
 			    type: 'bar',
-			    labels: true,
+			    labels: {
+			    	format: d3.format(',')
+			    },
 			    colors: {
 			    	'No badges': '#d95f02',
 				    'Badges': '#1b9e77',
@@ -41,10 +45,10 @@ function updateGameKeyCharts(data)
 			  axis: {
 			  	rotated: true,
 				  x: {
-				    show: false
+				    show: false,
 				  },
 				  y: {
-				    show: false,
+				    show: false
 				  }
 			  },
 	          bar: {

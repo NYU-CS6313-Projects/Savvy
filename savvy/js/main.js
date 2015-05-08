@@ -332,15 +332,6 @@ function getConditionSummary(attributeName, data)
 
   var max = Math.max(attribute_Badges.sum, attribute_NoBadges.sum);
 
-  // data: {
-  //       columns: [
-  //           ['data1', 30, 200, 100, 400, 150, 250],
-  //           ['data2', 130, 100, 140, 200, 150, 50]
-  //       ],
-  //       type: 'line'
-  //   }
-
-  // return { 'badges' : attribute_Badges.sum, 'noBadges' : attribute_NoBadges.sum, 'max' : max };
   return { 'values' : [['Badges', attribute_Badges.sum], ['No badges', attribute_NoBadges.sum]], 'max' : max };
 }
 
