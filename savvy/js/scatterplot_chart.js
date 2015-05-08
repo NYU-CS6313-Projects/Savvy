@@ -143,6 +143,7 @@ function updateSelection()
 
   // console.log(studentIDS);
 
+  updateStudentSelectionChart();
   updateGameKeyMetrics(selectedStudents);
   updateGameKeyCharts(selectedStudents);
   updateGroupSummaryCharts();
@@ -151,7 +152,7 @@ function updateSelection()
 
 function getScatterplotSelection()
 {
-  var ids = [];
+  var scatterplotSelectionIDS = [];
   var studentIDS = [];
 
   if(scatterplotChart.data())
@@ -165,13 +166,13 @@ function getScatterplotSelection()
       for (scatterplotIndex in scatterplotIndexes)
       {
         if (index == scatterplotIndexes[scatterplotIndex].index) {
-          ids.push(scatterplotIndexes[scatterplotIndex].value);
+          scatterplotSelectionIDS.push(scatterplotIndexes[scatterplotIndex].value);
         }
       }
 
     }
   }
 
-  studentIDS = getStudentsWithID(ids);
+  studentIDS = getStudentsWithID(scatterplotSelectionIDS);
   return studentIDS;
 }

@@ -95,6 +95,34 @@ table
 	padding: 15px
 }
 
+.student-row {
+	padding-top: 0.8152vh;
+	padding-bottom: 2.7173vh;
+}
+
+.student-box
+{
+	float: left;
+	background-color: rgb(240, 240, 240);
+	border: solid 1px rgb(211, 211, 211);
+	width: 1.4265vw;
+	height: 2.7173vh;
+	margin-left: 0.4279vw;
+	margin-right: 0.4279vw;
+
+	/*width: 20px;*/
+	/*height: 1.4265vw;*/
+	/*height: 20px;*/
+	/*margin-left: 6px;*/
+	/*margin-right: 6px;*/
+}
+
+.student-selected
+{
+  background-color: #7570b3 !important;
+  border-color: #413B86 !important;
+}
+
 .chapter-container,  .totalset-container{
 	border: solid 1px #000;
 	height: 33vh;

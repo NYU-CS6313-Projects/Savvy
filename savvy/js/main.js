@@ -13,9 +13,12 @@ LevelKeys[4] = 6;
 var studentIDS = [];
 var scatterplotChart;
 
+// var tt = document.getElementById("studentselection-chart").clientWidth;
+
 
 function initViz()
 {
+   // alert(window.innerHeight);
   // initColorScatterplot();
   updateScatterplot();
   // updateGameKeyMetrics();
