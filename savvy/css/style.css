@@ -213,6 +213,36 @@ a:link, a:visited {
     padding-right: 15px;
 }
 
+.metric-legend {
+	float: right;
+	padding-right: 1vw;
+	padding-right: 2.2vw;
+    padding-top: 1.3vh;
+}
+
+.metric-legend div{
+	float: left;
+	margin-left: 13px;
+	font-size: 11px;
+}
+
+.metric-circle {
+	width: 8px;
+  height: 8px;
+  border-radius: 40px;
+  padding: 0px !important;
+  margin-top: 3px;
+  margin-right: 9px;
+}
+
+.badge {
+	background-color: #1b9e77;
+}
+
+.nobadge {
+	background-color: #d95f02;
+}
+
 .scatterplot-matrix-box {
   width: 3.3vw;
   height: 5vw;
