@@ -1,8 +1,10 @@
 # Savvy
 
-Savvy is a tool for assessing educational games’ learning impact. In this demo we are using a dataset provided by Melissa Biles from NYU's CREATE (Consortium for Research and Evaluation of Advanced Technologies in Education) lab, pertaining to the "Noobs vs. Leets" educational video game.
+Savvy is a tool for assessing educational games’ learning impact. In this demo we are using a dataset provided by Melissa Biles from NYU's CREATE (Consortium for Research and Evaluation of Advanced Technologies in Education) lab, pertaining to the "Noobs vs. Leets" educational video game. The aim of this project is to provide a visualization that lets researchers analyze how users interact with this educational game.
 
-A live demo can be found [here](http://nyu-cs6313-projects.github.io/Savvy).
+![alt text](https://github.com/NYU-CS6313-Projects/Savvy/blob/master/screenshots2.jpg "Noobs vs. Leets --> Savvy")
+
+A live demo can be found [here](http://nyu-cs6313-projects.github.io/Savvy/savvy).
 
 You can run the tool locally by setting up a local Python server `python -m SimpleHTTPServer` using /savvy as the root.
 
