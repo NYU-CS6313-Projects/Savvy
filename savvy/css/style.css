@@ -212,4 +212,13 @@ a:link, a:visited {
     padding-left: 18px;
     padding-right: 15px;
 }
+
+.scatterplot-matrix-box {
+  width: 3.3vw;
+  height: 5vw;
+  /*background-color: gray;*/
+  float: left;
+  margin: 0 0.7vh;
+  border: solid 1px gray;
+  padding: 0;
 }
