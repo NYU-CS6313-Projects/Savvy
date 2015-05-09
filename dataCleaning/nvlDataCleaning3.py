@@ -61,14 +61,22 @@ if __name__ == '__main__':
     if tokens[0] not in nvlDataClean3:
       #print tokens[0]
       nvlDataClean3[tokens[0]]={}
+      nvlDataClean3[tokens[0]]['playCount']=tokens[4]
+      nvlDataClean3[tokens[0]]['playTime']=tokens[5]
       nvlDataClean3[tokens[0]]['deaths']=tokens[6]
+      nvlDataClean3[tokens[0]]['badgesEarned']=tokens[7]
+      nvlDataClean3[tokens[0]]['anglesUnlocked']=tokens[8]
+      nvlDataClean3[tokens[0]]['steps']=tokens[9]
 
     else:
+      nvlDataClean3[tokens[0]]['playCount']+=tokens[4]
+      nvlDataClean3[tokens[0]]['playTime']+=tokens[5]
       nvlDataClean3[tokens[0]]['deaths']+=tokens[6]
+      nvlDataClean3[tokens[0]]['badgesEarned']+=tokens[7]
+      nvlDataClean3[tokens[0]]['anglesUnlocked']+=tokens[8]
+      nvlDataClean3[tokens[0]]['steps']+=tokens[9]
 
 #print nvlDataClean3
-
-    
 
 #Write results to file
   results = open(sys.argv[2], 'w')
@@ -80,7 +88,7 @@ if __name__ == '__main__':
   count = 0
   
   for subjectId in nvlDataClean3:      
-          results.write(str(subjectId)+','+str(nvlDataClean3[subjectId]['deaths']))
+          results.write(str(subjectId)+','+str(nvlDataClean3[subjectId]['playCount'])+','+str(nvlDataClean3[subjectId]['playTime'])+','+str(nvlDataClean3[subjectId]['deaths'])+','+str(nvlDataClean3[subjectId]['badgesEarned'])+','+str(nvlDataClean3[subjectId]['anglesUnlocked'])+','+str(nvlDataClean3[subjectId]['steps']))
           results.write("\n")
         
   results.close()
@@ -88,7 +96,3 @@ if __name__ == '__main__':
   #print count
 
 print "all done!"
-
-'''
-results.write(str(subjectId)+','+str(nvlDataClean2[subjectId]['playCount']-1)+','+str(nvlDataClean2[subjectId]['playTime'])+','+str(nvlDataClean2[subjectId]['deaths'])+','+str(nvlDataClean2[level]['badgesEarned'])+','+str(nvlDataClean2[subjectId]['anglesUnlocked'])+','+str(nvlDataClean2[subjectId]['steps']))
-'''
