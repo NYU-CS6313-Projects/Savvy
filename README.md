@@ -1,4 +1,4 @@
-# Project Savvy
+# Savvy
 
 Savvy is a tool for assessing educational games’ learning impact
 
