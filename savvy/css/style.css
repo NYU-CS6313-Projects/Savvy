@@ -121,10 +121,9 @@ a:link, a:visited {
 }
 
 .clearSelection {
-	position: absolute;
-    left: 3vw;
-    top: 60.3vh;
-    z-index: 99999;
+  z-index: 99999;
+  position: relative;
+  margin-right: 4vw;
 }
 
 .hidden {
