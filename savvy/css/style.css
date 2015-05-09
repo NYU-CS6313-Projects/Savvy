@@ -254,11 +254,33 @@ a:link, a:visited {
 }
 
 .scatterplot-matrix-box {
-  width: 3.3vw;
-  height: 5vw;
+  /*width: 3.3vw;*/
+  width: 8.3vw;
+  /*height: 5vw;*/
+  height: 15vh;
   /*background-color: gray;*/
   float: left;
   margin: 0 0.7vh;
   border: solid 1px gray;
   padding: 0;
+}
+
+.scatterplotMatrixVix {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 99999999;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.scatterplotMatrix-container {
+	width: 63vw;
+	height: 92vh;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-color: rgba(92, 92, 92, 0.9);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.55);
 }

@@ -12,7 +12,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":12,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":7,
+    "playTime":656,
+    "deaths":7,
+    "badgesEarned":4,
+    "anglesUnlocked":71,
+    "steps":81
   },
   {
     "ID":3002,
@@ -27,7 +33,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":6,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":13,
+    "playTime":621,
+    "deaths":16,
+    "badgesEarned":0,
+    "anglesUnlocked":47,
+    "steps":73
   },
   {
     "ID":3003,
@@ -42,7 +54,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":19,
+    "playTime":1293,
+    "deaths":11,
+    "badgesEarned":3,
+    "anglesUnlocked":87,
+    "steps":69
   },
   {
     "ID":3004,
@@ -57,7 +75,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":6,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":22,
+    "playTime":1395,
+    "deaths":20,
+    "badgesEarned":2,
+    "anglesUnlocked":112,
+    "steps":112
   },
   {
     "ID":3005,
@@ -72,7 +96,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":21,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":12,
+    "playTime":1279,
+    "deaths":11,
+    "badgesEarned":0,
+    "anglesUnlocked":49,
+    "steps":83
   },
   {
     "ID":3007,
@@ -87,7 +117,13 @@
     "SIC_SUM":45,
     "IIGeo_SUM":23,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":8,
+    "playTime":769,
+    "deaths":7,
+    "badgesEarned":2,
+    "anglesUnlocked":40,
+    "steps":43
   },
   {
     "ID":3008,
@@ -102,7 +138,13 @@
     "SIC_SUM":55,
     "IIGeo_SUM":17,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":12,
+    "playTime":1057,
+    "deaths":12,
+    "badgesEarned":2,
+    "anglesUnlocked":57,
+    "steps":73
   },
   {
     "ID":3009,
@@ -117,7 +159,13 @@
     "SIC_SUM":21,
     "IIGeo_SUM":26,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":7,
+    "playTime":976,
+    "deaths":7,
+    "badgesEarned":6,
+    "anglesUnlocked":76,
+    "steps":125
   },
   {
     "ID":3011,
@@ -132,7 +180,13 @@
     "SIC_SUM":51,
     "IIGeo_SUM":8,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":24,
+    "playTime":623,
+    "deaths":27,
+    "badgesEarned":0,
+    "anglesUnlocked":43,
+    "steps":79
   },
   {
     "ID":3013,
@@ -147,7 +201,13 @@
     "SIC_SUM":45,
     "IIGeo_SUM":26,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":18,
+    "playTime":949,
+    "deaths":4,
+    "badgesEarned":10,
+    "anglesUnlocked":112,
+    "steps":122
   },
   {
     "ID":3014,
@@ -162,7 +222,13 @@
     "SIC_SUM":65,
     "IIGeo_SUM":19,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":9,
+    "playTime":1033,
+    "deaths":9,
+    "badgesEarned":8,
+    "anglesUnlocked":117,
+    "steps":124
   },
   {
     "ID":3016,
@@ -177,7 +243,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":10,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":26,
+    "playTime":1280,
+    "deaths":22,
+    "badgesEarned":5,
+    "anglesUnlocked":114,
+    "steps":85
   },
   {
     "ID":3017,
@@ -192,7 +264,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":28,
     "IIGC_SUM":null,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":10,
+    "playTime":923,
+    "deaths":10,
+    "badgesEarned":0,
+    "anglesUnlocked":45,
+    "steps":61
   },
   {
     "ID":3101,
@@ -207,7 +285,13 @@
     "SIC_SUM":72,
     "IIGeo_SUM":17,
     "IIGC_SUM":32,
-    "BIS_SUM":22
+    "BIS_SUM":22,
+    "playCount":47,
+    "playTime":1256,
+    "deaths":29,
+    "badgesEarned":1,
+    "anglesUnlocked":117,
+    "steps":119
   },
   {
     "ID":3102,
@@ -222,7 +306,13 @@
     "SIC_SUM":71,
     "IIGeo_SUM":20,
     "IIGC_SUM":28,
-    "BIS_SUM":29
+    "BIS_SUM":29,
+    "playCount":44,
+    "playTime":1316,
+    "deaths":24,
+    "badgesEarned":0,
+    "anglesUnlocked":97,
+    "steps":110
   },
   {
     "ID":3103,
@@ -237,7 +327,13 @@
     "SIC_SUM":50,
     "IIGeo_SUM":16,
     "IIGC_SUM":28,
-    "BIS_SUM":24
+    "BIS_SUM":24,
+    "playCount":49,
+    "playTime":1468,
+    "deaths":31,
+    "badgesEarned":0,
+    "anglesUnlocked":96,
+    "steps":132
   },
   {
     "ID":3104,
@@ -252,7 +348,13 @@
     "SIC_SUM":66,
     "IIGeo_SUM":11,
     "IIGC_SUM":24,
-    "BIS_SUM":24
+    "BIS_SUM":24,
+    "playCount":60,
+    "playTime":1501,
+    "deaths":38,
+    "badgesEarned":0,
+    "anglesUnlocked":69,
+    "steps":153
   },
   {
     "ID":3105,
@@ -267,7 +369,13 @@
     "SIC_SUM":74,
     "IIGeo_SUM":22,
     "IIGC_SUM":30,
-    "BIS_SUM":40
+    "BIS_SUM":40,
+    "playCount":36,
+    "playTime":1474,
+    "deaths":25,
+    "badgesEarned":0,
+    "anglesUnlocked":93,
+    "steps":139
   },
   {
     "ID":3106,
@@ -282,7 +390,13 @@
     "SIC_SUM":52,
     "IIGeo_SUM":21,
     "IIGC_SUM":35,
-    "BIS_SUM":23
+    "BIS_SUM":23,
+    "playCount":54,
+    "playTime":1325,
+    "deaths":28,
+    "badgesEarned":0,
+    "anglesUnlocked":98,
+    "steps":107
   },
   {
     "ID":3107,
@@ -297,7 +411,13 @@
     "SIC_SUM":61,
     "IIGeo_SUM":22,
     "IIGC_SUM":26,
-    "BIS_SUM":26
+    "BIS_SUM":26,
+    "playCount":31,
+    "playTime":1638,
+    "deaths":22,
+    "badgesEarned":0,
+    "anglesUnlocked":123,
+    "steps":150
   },
   {
     "ID":3108,
@@ -312,7 +432,13 @@
     "SIC_SUM":72,
     "IIGeo_SUM":22,
     "IIGC_SUM":25,
-    "BIS_SUM":24
+    "BIS_SUM":24,
+    "playCount":60,
+    "playTime":1738,
+    "deaths":33,
+    "badgesEarned":0,
+    "anglesUnlocked":146,
+    "steps":221
   },
   {
     "ID":3109,
@@ -327,7 +453,13 @@
     "SIC_SUM":29,
     "IIGeo_SUM":17,
     "IIGC_SUM":25,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":35,
+    "playTime":1421,
+    "deaths":25,
+    "badgesEarned":0,
+    "anglesUnlocked":93,
+    "steps":92
   },
   {
     "ID":3110,
@@ -342,7 +474,13 @@
     "SIC_SUM":75,
     "IIGeo_SUM":25,
     "IIGC_SUM":32,
-    "BIS_SUM":37
+    "BIS_SUM":37,
+    "playCount":42,
+    "playTime":2238,
+    "deaths":36,
+    "badgesEarned":2,
+    "anglesUnlocked":151,
+    "steps":169
   },
   {
     "ID":3111,
@@ -357,7 +495,13 @@
     "SIC_SUM":72,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":32
+    "BIS_SUM":32,
+    "playCount":35,
+    "playTime":1677,
+    "deaths":23,
+    "badgesEarned":0,
+    "anglesUnlocked":140,
+    "steps":122
   },
   {
     "ID":3112,
@@ -372,7 +516,13 @@
     "SIC_SUM":64,
     "IIGeo_SUM":14,
     "IIGC_SUM":30,
-    "BIS_SUM":18
+    "BIS_SUM":18,
+    "playCount":30,
+    "playTime":1531,
+    "deaths":21,
+    "badgesEarned":0,
+    "anglesUnlocked":111,
+    "steps":61
   },
   {
     "ID":3113,
@@ -387,7 +537,13 @@
     "SIC_SUM":63,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":18
+    "BIS_SUM":18,
+    "playCount":28,
+    "playTime":1681,
+    "deaths":22,
+    "badgesEarned":1,
+    "anglesUnlocked":131,
+    "steps":115
   },
   {
     "ID":3114,
@@ -402,7 +558,13 @@
     "SIC_SUM":60,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":22
+    "BIS_SUM":22,
+    "playCount":34,
+    "playTime":1645,
+    "deaths":26,
+    "badgesEarned":0,
+    "anglesUnlocked":151,
+    "steps":115
   },
   {
     "ID":3115,
@@ -417,7 +579,13 @@
     "SIC_SUM":64,
     "IIGeo_SUM":14,
     "IIGC_SUM":40,
-    "BIS_SUM":44
+    "BIS_SUM":44,
+    "playCount":22,
+    "playTime":1482,
+    "deaths":21,
+    "badgesEarned":0,
+    "anglesUnlocked":84,
+    "steps":73
   },
   {
     "ID":3116,
@@ -432,7 +600,13 @@
     "SIC_SUM":40,
     "IIGeo_SUM":18,
     "IIGC_SUM":37,
-    "BIS_SUM":21
+    "BIS_SUM":21,
+    "playCount":25,
+    "playTime":1463,
+    "deaths":18,
+    "badgesEarned":0,
+    "anglesUnlocked":133,
+    "steps":132
   },
   {
     "ID":3117,
@@ -447,7 +621,13 @@
     "SIC_SUM":42,
     "IIGeo_SUM":19,
     "IIGC_SUM":30,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":33,
+    "playTime":1441,
+    "deaths":25,
+    "badgesEarned":0,
+    "anglesUnlocked":78,
+    "steps":106
   },
   {
     "ID":3118,
@@ -462,7 +642,13 @@
     "SIC_SUM":37,
     "IIGeo_SUM":8,
     "IIGC_SUM":22,
-    "BIS_SUM":31
+    "BIS_SUM":31,
+    "playCount":62,
+    "playTime":1414,
+    "deaths":38,
+    "badgesEarned":0,
+    "anglesUnlocked":36,
+    "steps":167
   },
   {
     "ID":3119,
@@ -477,7 +663,13 @@
     "SIC_SUM":48,
     "IIGeo_SUM":15,
     "IIGC_SUM":null,
-    "BIS_SUM":39
+    "BIS_SUM":39,
+    "playCount":38,
+    "playTime":853,
+    "deaths":20,
+    "badgesEarned":0,
+    "anglesUnlocked":58,
+    "steps":66
   },
   {
     "ID":3201,
@@ -492,7 +684,13 @@
     "SIC_SUM":38,
     "IIGeo_SUM":null,
     "IIGC_SUM":38,
-    "BIS_SUM":35
+    "BIS_SUM":35,
+    "playCount":57,
+    "playTime":1248,
+    "deaths":29,
+    "badgesEarned":0,
+    "anglesUnlocked":73,
+    "steps":119
   },
   {
     "ID":3202,
@@ -507,7 +705,13 @@
     "SIC_SUM":null,
     "IIGeo_SUM":21,
     "IIGC_SUM":22,
-    "BIS_SUM":40
+    "BIS_SUM":40,
+    "playCount":60,
+    "playTime":1227,
+    "deaths":42,
+    "badgesEarned":0,
+    "anglesUnlocked":110,
+    "steps":110
   },
   {
     "ID":3203,
@@ -522,7 +726,13 @@
     "SIC_SUM":63,
     "IIGeo_SUM":13,
     "IIGC_SUM":36,
-    "BIS_SUM":40
+    "BIS_SUM":40,
+    "playCount":34,
+    "playTime":1227,
+    "deaths":20,
+    "badgesEarned":0,
+    "anglesUnlocked":75,
+    "steps":98
   },
   {
     "ID":3204,
@@ -537,7 +747,13 @@
     "SIC_SUM":33,
     "IIGeo_SUM":18,
     "IIGC_SUM":24,
-    "BIS_SUM":26
+    "BIS_SUM":26,
+    "playCount":9,
+    "playTime":1149,
+    "deaths":7,
+    "badgesEarned":0,
+    "anglesUnlocked":70,
+    "steps":68
   },
   {
     "ID":3205,
@@ -552,7 +768,13 @@
     "SIC_SUM":51,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":24
+    "BIS_SUM":24,
+    "playCount":35,
+    "playTime":1377,
+    "deaths":23,
+    "badgesEarned":0,
+    "anglesUnlocked":66,
+    "steps":117
   },
   {
     "ID":3206,
@@ -567,7 +789,13 @@
     "SIC_SUM":46,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":35
+    "BIS_SUM":35,
+    "playCount":34,
+    "playTime":1371,
+    "deaths":15,
+    "badgesEarned":0,
+    "anglesUnlocked":97,
+    "steps":144
   },
   {
     "ID":3207,
@@ -582,7 +810,13 @@
     "SIC_SUM":69,
     "IIGeo_SUM":22,
     "IIGC_SUM":38,
-    "BIS_SUM":26
+    "BIS_SUM":26,
+    "playCount":39,
+    "playTime":1250,
+    "deaths":21,
+    "badgesEarned":0,
+    "anglesUnlocked":79,
+    "steps":88
   },
   {
     "ID":3208,
@@ -597,7 +831,13 @@
     "SIC_SUM":51,
     "IIGeo_SUM":19,
     "IIGC_SUM":31,
-    "BIS_SUM":23
+    "BIS_SUM":23,
+    "playCount":37,
+    "playTime":1100,
+    "deaths":21,
+    "badgesEarned":0,
+    "anglesUnlocked":24,
+    "steps":111
   },
   {
     "ID":3209,
@@ -612,7 +852,13 @@
     "SIC_SUM":33,
     "IIGeo_SUM":11,
     "IIGC_SUM":23,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":26,
+    "playTime":1286,
+    "deaths":21,
+    "badgesEarned":2,
+    "anglesUnlocked":106,
+    "steps":94
   },
   {
     "ID":3211,
@@ -627,7 +873,13 @@
     "SIC_SUM":68,
     "IIGeo_SUM":22,
     "IIGC_SUM":32,
-    "BIS_SUM":null
+    "BIS_SUM":null,
+    "playCount":40,
+    "playTime":1304,
+    "deaths":22,
+    "badgesEarned":0,
+    "anglesUnlocked":77,
+    "steps":126
   },
   {
     "ID":3212,
@@ -642,7 +894,13 @@
     "SIC_SUM":71,
     "IIGeo_SUM":18,
     "IIGC_SUM":17,
-    "BIS_SUM":25
+    "BIS_SUM":25,
+    "playCount":40,
+    "playTime":1283,
+    "deaths":26,
+    "badgesEarned":0,
+    "anglesUnlocked":87,
+    "steps":117
   },
   {
     "ID":3213,
@@ -657,7 +915,13 @@
     "SIC_SUM":81,
     "IIGeo_SUM":6,
     "IIGC_SUM":29,
-    "BIS_SUM":28
+    "BIS_SUM":28,
+    "playCount":26,
+    "playTime":1295,
+    "deaths":17,
+    "badgesEarned":0,
+    "anglesUnlocked":67,
+    "steps":129
   },
   {
     "ID":3214,
@@ -672,7 +936,13 @@
     "SIC_SUM":65,
     "IIGeo_SUM":26,
     "IIGC_SUM":35,
-    "BIS_SUM":37
+    "BIS_SUM":37,
+    "playCount":60,
+    "playTime":1101,
+    "deaths":33,
+    "badgesEarned":0,
+    "anglesUnlocked":69,
+    "steps":107
   },
   {
     "ID":3216,
@@ -687,7 +957,13 @@
     "SIC_SUM":48,
     "IIGeo_SUM":15,
     "IIGC_SUM":37,
-    "BIS_SUM":35
+    "BIS_SUM":35,
+    "playCount":20,
+    "playTime":1150,
+    "deaths":14,
+    "badgesEarned":0,
+    "anglesUnlocked":27,
+    "steps":90
   },
   {
     "ID":3217,
@@ -702,7 +978,13 @@
     "SIC_SUM":73,
     "IIGeo_SUM":29,
     "IIGC_SUM":35,
-    "BIS_SUM":37
+    "BIS_SUM":37,
+    "playCount":32,
+    "playTime":1253,
+    "deaths":21,
+    "badgesEarned":0,
+    "anglesUnlocked":84,
+    "steps":137
   },
   {
     "ID":3219,
@@ -717,7 +999,13 @@
     "SIC_SUM":79,
     "IIGeo_SUM":15,
     "IIGC_SUM":40,
-    "BIS_SUM":43
+    "BIS_SUM":43,
+    "playCount":76,
+    "playTime":1285,
+    "deaths":44,
+    "badgesEarned":0,
+    "anglesUnlocked":75,
+    "steps":154
   },
   {
     "ID":3220,
@@ -732,7 +1020,13 @@
     "SIC_SUM":81,
     "IIGeo_SUM":16,
     "IIGC_SUM":40,
-    "BIS_SUM":29
+    "BIS_SUM":29,
+    "playCount":44,
+    "playTime":1260,
+    "deaths":26,
+    "badgesEarned":0,
+    "anglesUnlocked":68,
+    "steps":149
   },
   {
     "ID":3221,
@@ -747,7 +1041,13 @@
     "SIC_SUM":32,
     "IIGeo_SUM":26,
     "IIGC_SUM":32,
-    "BIS_SUM":23
+    "BIS_SUM":23,
+    "playCount":37,
+    "playTime":1289,
+    "deaths":24,
+    "badgesEarned":0,
+    "anglesUnlocked":96,
+    "steps":106
   },
   {
     "ID":3222,
@@ -762,7 +1062,13 @@
     "SIC_SUM":63,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":35
+    "BIS_SUM":35,
+    "playCount":57,
+    "playTime":1515,
+    "deaths":32,
+    "badgesEarned":2,
+    "anglesUnlocked":119,
+    "steps":277
   },
   {
     "ID":3223,
@@ -777,6 +1083,12 @@
     "SIC_SUM":60,
     "IIGeo_SUM":null,
     "IIGC_SUM":null,
-    "BIS_SUM":35
+    "BIS_SUM":35,
+    "playCount":null,
+    "playTime":null,
+    "deaths":null,
+    "badgesEarned":null,
+    "anglesUnlocked":null,
+    "steps":null
   }
 ]

@@ -12,6 +12,34 @@
 </head>
 <body onload="initViz()" style="overflow: hidden">
 
+<!-- <div class="scatterplotMatrixVix">
+	<div class="wrapper">
+		<div class="scatterplotMatrix-container">
+			<div class="scatterplotMatrix-chart">
+				<div class="matrix-row1">
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-PreGeoSum">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-PostGeoSum">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-PrePostGeoGain">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-SIC_SUM">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-IIGeo_SUM">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-IIGC_SUM">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PreGeoSum-BIS_SUM">...</div>
+				</div>
+				<div class="matrix-row2">
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-PreGeoSum">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-PostGeoSum">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-PrePostGeoGain">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-SIC_SUM">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-IIGeo_SUM">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-IIGC_SUM">...</div>
+					<div class="scatterplot-matrix-box" id="scatterplot-PostGeoSum-BIS_SUM">...</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div class="mainViz">
 <div class="wrapper">
 	<div class="left-wrapper">
 		<div class="scatterplot-container">
@@ -25,6 +53,13 @@
 					  <option value="IIGeo_SUM">Interest in Geometry</option>
 					  <option value="IIGC_SUM">Interest in Games</option>
 					  <option value="BIS_SUM">Interest in Badges</option>
+					  <option disabled>──────────</option>
+					  <option value="playTime">Play Time (ms)</option>
+					  <option value="playCount"># Level Repeats</option>
+					  <option value="steps"># Steps</option>
+					  <option value="deaths">Deaths</option>
+					  <option value="anglesUnlocked"># Angles Unlocked</option>
+					  <option value="badgesEarned"># Badges Earned</option>
 					</select>
 				</div>
 				<div class=""><b>X: </b>
@@ -35,7 +70,13 @@
 					  <option value="SIC_SUM">Situational Interest</option>
 					  <option value="IIGeo_SUM">Interest in Geometry</option>
 					  <option value="IIGC_SUM">Interest in Games</option>
-					  <option value="BIS_SUM">Interest in Badges</option>
+					  <option disabled>──────────</option>
+					  <option value="playTime">Play Time (ms)</option>
+					  <option value="playCount"># Level Repeats</option>
+					  <option value="steps"># Steps</option>
+					  <option value="deaths">Deaths</option>
+					  <option value="anglesUnlocked"># Angles Unlocked</option>
+					  <option value="badgesEarned"># Badges Earned</option>
 					</select>
 				</div>
 			</div>
@@ -200,6 +241,7 @@
 			<div class="totalset-chapter4-chart">Loading...</div>
 		</div>
 	</div>
+</div>
 </div>
 </body>
 
