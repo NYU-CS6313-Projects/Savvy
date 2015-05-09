@@ -105,6 +105,9 @@ function updateScatterplot()
         label: {
           text: axes.yName,
           position: 'inner-top'
+        },
+        tick: {
+          fit: true
         } 
       },
       x: {
@@ -112,6 +115,9 @@ function updateScatterplot()
         label: {
           text: axes.xName,
           position: 'inner-right',
+        },
+        tick: {
+          fit: true
         }
       }
     },

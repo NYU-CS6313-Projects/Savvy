@@ -439,8 +439,9 @@
               right: 0,
             },
             tick: {
-              outer: false
-            }
+              outer: false,
+              culling: false
+            },
           },
           y: {
             min: 0,
@@ -450,7 +451,8 @@
               right: 0,
             },
             tick: {
-              outer: false
+              outer: false,
+              culling: false
             }
           }
     },
