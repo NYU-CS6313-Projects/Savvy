@@ -255,14 +255,19 @@ a:link, a:visited {
 
 .scatterplot-matrix-box {
   /*width: 3.3vw;*/
-  width: 8.3vw;
+  /*width: 8.3vw;*/
   /*height: 5vw;*/
-  height: 15vh;
+  /*height: 15vh;*/
+  width: 80px;
+  height: 80px;
   /*background-color: gray;*/
   float: left;
   margin: 0 0.7vh;
   border: solid 1px gray;
   padding: 0;
+  /*position: static;*/
+  /*display: block;*/
+  top: 0;
 }
 
 .scatterplotMatrixVix {
