@@ -48,7 +48,9 @@ function getConditionForStudent(id)
 function updateScatterplot()
 {
   var colorIndexScatterplot = initColorScatterplot();
-  var scatterplotColorIndexes = colorIndexScatterplot.data()[1].values;
+  var scatterplotColorIndexes;
+
+  if (colorIndexScatterplot.data()[1]) { scatterplotColorIndexes = colorIndexScatterplot.data()[1].values; } 
 
   var axes = getScatterplotAxes();
 
@@ -99,12 +101,14 @@ function updateScatterplot()
     },
     axis: {
       y: {
+        min: 0,
         label: {
           text: axes.yName,
           position: 'inner-top'
         } 
       },
       x: {
+        min: 0,
         label: {
           text: axes.xName,
           position: 'inner-right',
@@ -154,11 +158,18 @@ function updateScatterplot()
     },
     legend: {
       hide: true,
-
     },
     point: {
       r: 3,
     },
+    grid: {
+      x: {
+        show: true
+      },
+      y: {
+        show: true
+      }
+    }
   });
 
   
@@ -187,6 +198,8 @@ function getScatterplotSelection()
   if(scatterplotChart.data())
   {
     var scatterplotIndexes = scatterplotChart.data()[1].values;
+    // if (!scatterplotIndexes) { return [] };
+
     var selectedGroup = scatterplotChart.selected();
 
     for (student in selectedGroup) {

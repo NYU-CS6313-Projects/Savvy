@@ -48,6 +48,7 @@
     axis: {
           // rotated: true,
           x: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -55,6 +56,7 @@
             }
           },
           y: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -127,6 +129,7 @@
     axis: {
           // rotated: true,
           x: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -134,6 +137,7 @@
             }
           },
           y: {
+            min:0,
             show: false,
             padding: {
               left: 0,
@@ -201,6 +205,7 @@
     axis: {
           // rotated: true,
           x: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -208,6 +213,7 @@
             }
           },
           y: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -275,6 +281,7 @@
     axis: {
           // rotated: true,
           x: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -282,6 +289,7 @@
             }
           },
           y: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -349,6 +357,7 @@
     axis: {
           // rotated: true,
           x: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -356,6 +365,7 @@
             }
           },
           y: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
@@ -422,17 +432,25 @@
     axis: {
           // rotated: true,
           x: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
               right: 0,
+            },
+            tick: {
+              outer: false
             }
           },
           y: {
+            min: 0,
             show: false,
             padding: {
               left: 0,
               right: 0,
+            },
+            tick: {
+              outer: false
             }
           }
     },
