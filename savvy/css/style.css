@@ -120,6 +120,17 @@ a:link, a:visited {
 	margin: 1vh 0.5vw;
 }
 
+.clearSelection {
+	position: absolute;
+    left: 3vw;
+    top: 60.3vh;
+    z-index: 99999;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
 .student-row {
 	padding-top: 0.8152vh;
 	padding-bottom: 3.3vh;

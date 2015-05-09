@@ -227,5 +227,9 @@ function updateConditionSelection() {
 
   alert ("badges: " + badgesChecked + " - no badges: " + noBadgesChecked);
 
+}
 
+function clearScatterplotSelection() {
+  scatterplotChart.unselect();
+  updateSelection();
 }
