@@ -131,7 +131,7 @@ if __name__ == '__main__':
           #print nvlDataClean[subjectId][chapter][level][playCount]['steps']
           #print nvlDataClean[subjectId][chapter][level][playCount]['badgeDecision']
           
-          results.write(str(subjectId)+','+str(nvlDataClean2[subjectId][chapter][level]['badgeCond'])+','+str(chapter)+','+str(level)+','+str(nvlDataClean2[subjectId][chapter][level]['playCount'])+','+str(nvlDataClean2[subjectId][chapter][level]['playTime'])+','+str(nvlDataClean2[subjectId][chapter][level]['deaths'])+','+str(nvlDataClean2[subjectId][chapter][level]['badgesEarned'])+','+str(nvlDataClean2[subjectId][chapter][level]['anglesUnlocked'])+','+str(nvlDataClean2[subjectId][chapter][level]['steps'])+','+str(nvlDataClean2[subjectId][chapter][level]['badgeDecision']))
+          results.write(str(subjectId)+','+str(nvlDataClean2[subjectId][chapter][level]['badgeCond'])+','+str(chapter)+','+str(level)+','+str(nvlDataClean2[subjectId][chapter][level]['playCount']-1)+','+str(nvlDataClean2[subjectId][chapter][level]['playTime'])+','+str(nvlDataClean2[subjectId][chapter][level]['deaths'])+','+str(nvlDataClean2[subjectId][chapter][level]['badgesEarned'])+','+str(nvlDataClean2[subjectId][chapter][level]['anglesUnlocked'])+','+str(nvlDataClean2[subjectId][chapter][level]['steps'])+','+str(nvlDataClean2[subjectId][chapter][level]['badgeDecision']))
           #results.write("\n")
         
   results.close()
