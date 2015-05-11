@@ -189,11 +189,14 @@ function updateScatterplot()
 function updateSelection()
 {
   selectedStudents = getScatterplotSelection();
+  getIndexFromSelection();
+  
   updateStudentSelectionChart();
   updateGameKeyMetrics(selectedStudents);
   updateGameKeyCharts(selectedStudents);
   updateGroupSummaryCharts();
 }
+
 
 
 function getScatterplotSelection()
@@ -221,8 +224,38 @@ function getScatterplotSelection()
     }
   }
 
+  console.log(scatterplotSelectionIDS);
+
   studentIDS = getStudentsWithID(scatterplotSelectionIDS);
   return studentIDS;
+}
+
+
+function getIndexFromSelection()
+{
+  prevIndexes;
+
+  var selection = scatterplotChart.selected();
+  var scatterplotIndexes = scatterplotChart.data()[1].values;
+
+  for (item in selection) {
+    
+    for (scatterplotIndex in scatterplotIndexes) {
+      if (selection[item].index == scatterplotIndexes[scatterplotIndex].index) {
+        prevIndexes.push(scatterplotIndexes[scatterplotIndex].index)
+      }
+    }
+
+  }
+
+  prevIndexes = prevIndexes;
+}
+
+
+function loadScatterplotSelection(prevIndexes) {
+
+  scatterplotChart.select(yAxisKey, prevIndexes);
+
 }
 
 

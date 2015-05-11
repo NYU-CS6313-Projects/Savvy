@@ -13,6 +13,8 @@ LevelKeys[4] = 6;
 var studentIDS = [];
 var scatterplotChart;
 
+var prevIndexes = [];
+
 var statisticalValue = 'sum';
 
 
