@@ -178,8 +178,9 @@ function updateScatterplot()
     }
   });
 
-  
+  loadScatterplotSelection(prevIndexes);
   updateSelection();
+  
 
   return scatterplotChart;
 

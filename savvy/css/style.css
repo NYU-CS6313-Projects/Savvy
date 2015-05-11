@@ -123,8 +123,8 @@ a:link, a:visited {
 .clearSelection {
   z-index: 99999;
   position: relative;
-  /*margin-right: 4vw;*/
-  margin-right: 0.2vw;
+  margin-right: 4vw;
+  /*margin-right: 0.2vw;*/
 }
 
 .prevSelection {
