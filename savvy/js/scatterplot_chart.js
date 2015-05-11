@@ -270,5 +270,6 @@ function updateConditionSelection() {
 
 function clearScatterplotSelection() {
   scatterplotChart.unselect();
+  prevIndexes = [];
   updateSelection();
 }
