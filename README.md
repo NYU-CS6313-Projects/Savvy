@@ -4,7 +4,7 @@ A live demo can be found [here](http://nyu-cs6313-projects.github.io/Savvy/savvy
 
 Watch demo video [here](https://vimeo.com/128034509)
 
-Read final project proposal [~~here~~]() (available 5/18!!!)
+Read final project proposal [here](https://drive.google.com/open?id=0B3OrUZK5dEeNTURsNXNJdXdyUDQ&authuser=2)
 
 ---
 
